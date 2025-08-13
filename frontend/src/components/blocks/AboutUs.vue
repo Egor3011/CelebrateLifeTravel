@@ -19,11 +19,11 @@ import { onMounted } from "vue";
 gsap.registerPlugin(ScrollTrigger);
 
 onMounted(() => {
-    const tl = gsap.timeline()
+    const tl = gsap.timeline({delay: 1})
     tl.from(".komand--AboutUs", {
         x: -100,
         opacity: 0,
-        duration: 0.5
+        duration: 1
     })
     tl.from(".titleBlock", {
         x: -100,

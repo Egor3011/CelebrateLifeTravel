@@ -25,6 +25,8 @@ button {
   padding: 10px 20px;
   font-family: "Unbounded-Bold";
 
+  color: var(--vt-text-color);;
+
   background: var(--vt-second-color);
 
   border: 2px solid var(--vt-second-color);
@@ -34,7 +36,7 @@ button {
 }
 
 button:hover {
-  transform: translate(0, -5px);
+  transform: translate(0, -4px);
   box-shadow: 0px 0px 8px var(--vt-shadow-color);
 
   border: 2px solid #000;
@@ -43,7 +45,7 @@ button:hover {
 }
 
 button:active {
-  transform: translate(0, -4px);
+  transform: translate(0, -3px);
   opacity: 70%;
 }
 

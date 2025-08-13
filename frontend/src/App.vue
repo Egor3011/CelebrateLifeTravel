@@ -1,9 +1,13 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import AboutUs from './components/blocks/AboutUs.vue';
+import startImage from './components/blocks/startImage.vue';
+import headerComp from './components/headerComp.vue';
 </script>
 
 <template>
+  <headerComp/>
+  <startImage/>
   <header>
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
 
@@ -19,7 +23,7 @@ import AboutUs from './components/blocks/AboutUs.vue';
   <RouterView />
   <a href="">testtest</a>
   <AboutUs/>
-  
+
   <button>Забронировать место</button>
 </template>
 
