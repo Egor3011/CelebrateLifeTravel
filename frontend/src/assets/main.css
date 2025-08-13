@@ -71,3 +71,13 @@ h2 {
 h3 {
   font-size: 20px;
 }
+
+.container {
+  margin: 0 10vw;
+}
+
+@media(max-width: 1024px) {
+  .container {
+    margin: 2vw;
+  }
+}
