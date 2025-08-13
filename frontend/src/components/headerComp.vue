@@ -2,8 +2,8 @@
     <div class="headerContainer container">
         <h4 style="margin: 0; font-size: 18px; font-family: 'Unbounded-Medium';">CELEBRATE LIFE TRAVEL</h4>
         <nav>
-          <RouterLink to="/">Home</RouterLink>
-          <RouterLink to="/about">About</RouterLink>
+          <RouterLink class="routerLink" to="/">Home</RouterLink>
+          <RouterLink class="routerLink" to="/about">About</RouterLink>
         </nav>
     </div>
 </template>
@@ -14,13 +14,15 @@ import { RouterLink } from 'vue-router';
 
 <style>
 .headerContainer {
-    padding: 0 30px;
-
-    position: fixed;
-    width: 80vw;
-    height: 50px;
+    padding: 10px 30px;
 
     align-content: center;
+    display: flex;
+    justify-content: space-between;
+
+    position: absolute;
+    width: 80vw;
+
 
     color: #FFFFFF;
 
@@ -28,5 +30,15 @@ import { RouterLink } from 'vue-router';
     border: 1px solid #FFFFFF;
 
     border-radius: 25px;
+}
+
+.routerLink {
+    color: #FFF;
+    transition: 0.2s;
+}
+
+.routerLink:hover {
+    color: var(--vt-text-h-color);
+    transition: 0.3s;
 }
 </style>

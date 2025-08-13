@@ -29,7 +29,6 @@ onMounted(() => {
         scrollTrigger: {
             trigger: ".aboutUs-Block",
             start: "5% bottom",
-            markers: true
         },
         x: -100,
         opacity: 0,

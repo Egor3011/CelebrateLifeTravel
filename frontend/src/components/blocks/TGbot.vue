@@ -26,8 +26,7 @@ onMounted(() => {
     gsap.from(".containerTGBOT__block", {
         scrollTrigger: {
             trigger: ".containerTGBOT__block",
-            start: "40% bottom",
-            markers: true
+            start: "40% bottom"
         },
         y: -100,
         opacity: 0,
