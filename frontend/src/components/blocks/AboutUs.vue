@@ -7,22 +7,47 @@
         <div style="text-align: center;">
             <h2>Наша команда</h2>
         </div>
-        <testCardCom/>
+        <Swiper :slides-per-view="3" :space-between="50">
+            <swiper-slide v-for="el in comandInfo" >
+                <testCardCom :name-title="el.name" :img-src="el.imgSrc" :info="el.info" :position="el.position"/>
+            </swiper-slide>
+            <swiper-slide>
+                ghdbfjs
+            </swiper-slide>
+            <swiper-slide>
+                ghdbfjs
+            </swiper-slide>
+            <swiper-slide>
+                ghdbfjs
+            </swiper-slide>
+            <swiper-slide>
+                ghdbfjs
+            </swiper-slide>
+            <swiper-slide>
+                ghdbfjs
+            </swiper-slide>
+            <swiper-slide>
+                ghdbfjs
+            </swiper-slide>
+        </Swiper>
     </div>
 </template>
 
 <script setup>
-
 import { gsap } from "gsap";
-    
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import {Swiper, SwiperSlide} from "swiper/vue";
+import "swiper/css/bundle";
+
 import { onMounted } from "vue";
 
 import testCardCom from "./testCardCom.vue";
 
 gsap.registerPlugin(ScrollTrigger);
 
-let comandInfo = [{name: "ghdbfjs", imgSrc: "afssdf", info: "dsfssd", position: "fdsfdsfdsfsdguyhfbguyregvhv hvghefv hufe whvhdfsghjv"}]
+const comandInfo = [{name: "ghdbfjs", imgSrc: "afssdf", info: "dsfssd", position: "fdsfdsfdsfsdguyhfbguyregvhv hvghefv hufe whvhdfsghjv"},{name: "ghdbfjs", imgSrc: "afssdf", info: "dsfssd", position: "fdsfdsfdsfsdguyhfbguyregvhv hvghefv hufe whvhdfsghjv"},{name: "ghdbfjs", imgSrc: "afssdf", info: "dsfssd", position: "fdsfdsfdsfsdguyhfbguyregvhv hvghefv hufe whvhdfsghjv"}]
+
+
 
 onMounted(() => {
     gsap.from(".titleBlockDiv__aboutUs", {

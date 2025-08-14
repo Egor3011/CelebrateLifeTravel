@@ -1,20 +1,20 @@
-<script>
-/*const props = defineProps({
+<script setup>
+const props = defineProps({
     nameTitle: String,
     position: String,
     imgSrc: String,
     info: String
-})*/
+})
 </script>
 
 <template>
     <div class="commandContainerCard">
         <div>
-            <h3>fdgdfgdfgfdgdf</h3>
+            <h3>{{props.nameTitle}}</h3>
             <div class="lineInBox"></div>
-            <h3>dfgdfgdg</h3>
+            <h3>{{props.position}}</h3>
         </div>
-        <p>gdfgfdgdf</p>
+        <p>{{props.info}}</p>
     </div>
 </template>
 

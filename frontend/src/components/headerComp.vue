@@ -2,8 +2,8 @@
     <div class="headerContainer container">
         <h4 style="margin: 0; font-size: 18px; font-family: 'Unbounded-Medium';">CELEBRATE LIFE TRAVEL</h4>
         <nav>
-          <RouterLink class="routerLink" to="/">Home</RouterLink>
-          <RouterLink class="routerLink" to="/about">About</RouterLink>
+          <RouterLink class="routerLink" to="/">Главная</RouterLink>
+          <RouterLink class="routerLink" to="/about">Забронировать тур</RouterLink>
         </nav>
     </div>
 </template>
@@ -35,6 +35,7 @@ import { RouterLink } from 'vue-router';
 .routerLink {
     color: #FFF;
     transition: 0.2s;
+    margin-left: 30px;
 }
 
 .routerLink:hover {
