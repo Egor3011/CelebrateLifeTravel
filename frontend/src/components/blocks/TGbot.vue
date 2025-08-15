@@ -2,7 +2,10 @@
     <div class="containerTGBOT__block">
         <h1>TELEGRAM-БОТ</h1>
         <p>Ваш помощник в поиске нужного тура </p>
-        <button @click="urlOnClick_TG()">Открыть</button>
+        <button @click="urlOnClick_TG()" style="align-items: center;">
+            <img src="/public/tg_icon.png" style="height: 10px;">
+            Открыть
+        </button>
     </div>
 </template>
 
