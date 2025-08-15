@@ -16,10 +16,6 @@
             <swiper-slide v-for="el in comandInfo" >
                 <testCardCom :name-title="el.name" :img-src="el.imgSrc" :info="el.info" :position="el.position"/>
             </swiper-slide>
-            <swiper-slide>
-                ghdbfjs
-            </swiper-slide>
-            
         </Swiper>
     </div>
 </template>

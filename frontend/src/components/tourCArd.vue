@@ -1,42 +1,34 @@
-<template>
-  <div class="carousel">
-    <div class="carousel-inner" :style="{ transform: `translateX(-${currentIndex * 100}%)` }">
-      <div class="carousel-item" v.for="(slide, index) in slides" :key="index">{{ slide }}</div>
-    </div>
-    <button @click="prevSlide">Предыдущий</button>
-    <button @click="nextSlide">Следующий</button>
-  </div>
-</template>
+<script setup>
 
-<script>
-export default {
-  data() {
-    return {
-      slides: ['Слайд 1', 'Слайд 2', 'Слайд 3'],
-      currentIndex: 0
-    };
-  },
-  methods: {
-    nextSlide() {
-      this.currentIndex = (this.currentIndex + 1) % this.slides.length;
-    },
-    prevSlide() {
-      this.currentIndex = (this.currentIndex - 1 + this.slides.length) % this.slides.length;
-    }
-  }
-};
+const props = defineProps({
+    title: String,
+    imgSrc: String,
+    info: String,
+    link: String
+})
+
+const urlOnClick = (url) => {
+    window.open(url)
+}
 </script>
 
+
+<template>
+    <div class="container__tourCard">
+        <img :src="props.imgSrc" alt="" style="width: 100%;">
+        <h3>{{ props.title }}</h3>
+        <p>{{props.info}}</p>
+        <button @click="urlOnClick(props.link)">Подробнее</button>
+    </div>
+</template>
+
 <style>
-.carousel {
-  overflow: hidden;
-  width: 300px;
-}
-.carousel-inner {
-  display: flex;
-  transition: transform 0.3s ease;
-}
-.carousel-item {
-  min-width: 100%;
+.container__tourCard {
+    width: auto;
+
+    padding: 20px;
+
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px var(--vt-shadow-color);
 }
 </style>
