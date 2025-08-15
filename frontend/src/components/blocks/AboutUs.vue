@@ -7,28 +7,19 @@
         <div style="text-align: center;">
             <h2>Наша команда</h2>
         </div>
-        <Swiper :slides-per-view="3" :space-between="50">
+        <Swiper 
+        :slides-per-view="2.5" 
+        :space-between="40" 
+        :freeMode="true"
+        :breakpoints="{0: {slidesPerView: 1.5}, 320: {slidesPerView: 2.1}, 640: {slidesPerView: 2.8}, 1024: {slidesPerView: 3.5},}"
+        style="height: auto; padding: 40px 20px; overflow: hidden;">
             <swiper-slide v-for="el in comandInfo" >
                 <testCardCom :name-title="el.name" :img-src="el.imgSrc" :info="el.info" :position="el.position"/>
             </swiper-slide>
             <swiper-slide>
                 ghdbfjs
             </swiper-slide>
-            <swiper-slide>
-                ghdbfjs
-            </swiper-slide>
-            <swiper-slide>
-                ghdbfjs
-            </swiper-slide>
-            <swiper-slide>
-                ghdbfjs
-            </swiper-slide>
-            <swiper-slide>
-                ghdbfjs
-            </swiper-slide>
-            <swiper-slide>
-                ghdbfjs
-            </swiper-slide>
+            
         </Swiper>
     </div>
 </template>
@@ -38,6 +29,9 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import {Swiper, SwiperSlide} from "swiper/vue";
 import "swiper/css/bundle";
+import axios from "axios";
+
+import { ref } from "vue";
 
 import { onMounted } from "vue";
 
@@ -45,7 +39,7 @@ import testCardCom from "./testCardCom.vue";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const comandInfo = [{name: "ghdbfjs", imgSrc: "afssdf", info: "dsfssd", position: "fdsfdsfdsfsdguyhfbguyregvhv hvghefv hufe whvhdfsghjv"},{name: "ghdbfjs", imgSrc: "afssdf", info: "dsfssd", position: "fdsfdsfdsfsdguyhfbguyregvhv hvghefv hufe whvhdfsghjv"},{name: "ghdbfjs", imgSrc: "afssdf", info: "dsfssd", position: "fdsfdsfdsfsdguyhfbguyregvhv hvghefv hufe whvhdfsghjv"}]
+const comandInfo = ref([])
 
 
 
@@ -57,7 +51,17 @@ onMounted(() => {
         },
         x: -100,
         opacity: 0,
-        duration: 1
+        duration: 1,
+    })
+
+    axios.get("https://be67bc91a5069fe3.mokky.dev/command").then((res) => {
+        comandInfo.value = res.data
     })
 })
+
+const getCommandCardsInfo = () => {
+    axios.get("https://be67bc91a5069fe3.mokky.dev/command").then((res) => {
+        return res.data
+    })
+}
 </script>
