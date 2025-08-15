@@ -54,10 +54,4 @@ onMounted(() => {
         comandInfo.value = res.data
     })
 })
-
-const getCommandCardsInfo = () => {
-    axios.get("https://be67bc91a5069fe3.mokky.dev/command").then((res) => {
-        return res.data
-    })
-}
 </script>

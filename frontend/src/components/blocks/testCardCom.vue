@@ -59,4 +59,10 @@ const props = defineProps({
 
     border-radius: 20px;
 }
+
+@media(max-width: 1024px) {
+    .commandContainerCard {
+        padding: 10px;
+    }
+}
 </style>

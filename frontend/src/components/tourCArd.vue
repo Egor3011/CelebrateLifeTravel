@@ -15,9 +15,9 @@ const urlOnClick = (url) => {
 
 <template>
     <div class="container__tourCard">
-        <img :src="props.imgSrc" alt="" style="width: 100%;">
+        <img :src="props.imgSrc" alt="" style="width: 100%; border-radius: 20px;">
         <h3>{{ props.title }}</h3>
-        <p>{{props.info}}</p>
+        <p class="textP__tourCard">{{props.info}}</p>
         <button @click="urlOnClick(props.link)">Подробнее</button>
     </div>
 </template>
@@ -30,5 +30,15 @@ const urlOnClick = (url) => {
 
     border-radius: 20px;
     box-shadow: 0px 0px 10px var(--vt-shadow-color);
+}
+
+.textP__tourCard {
+    font-size: 12px;
+}
+
+@media(max-width: 1024px) {
+    .container__tourCard {
+        padding: 10px;
+    }
 }
 </style>

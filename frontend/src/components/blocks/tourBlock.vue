@@ -42,7 +42,7 @@ onMounted(() => {
         :slides-per-view="2.5" 
         :space-between="40" 
         :freeMode="true"
-        :breakpoints="{0: {slidesPerView: 1.3}, 320: {slidesPerView: 1.8, spaceBetween: 20}, 640: {slidesPerView: 2.5, spaceBetween: 25}, 1024: {slidesPerView: 2.5, spaceBetween: 40},}"
+        :breakpoints="{0: {slidesPerView: 1.3}, 320: {slidesPerView: 1.7, spaceBetween: 10}, 640: {slidesPerView: 2.5, spaceBetween: 25}, 1024: {slidesPerView: 2.8, spaceBetween: 40},}"
         style="height: auto; padding: 40px 20px; overflow: hidden;">
             <swiper-slide v-for="el in tourInfo" >
                 <tourCArd :title="el.title" :img-src="el.imgSrc" :info="el.info" :link="el.link"/>
