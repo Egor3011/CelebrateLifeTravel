@@ -2,7 +2,7 @@
     <div class="containerTGBOT__block">
         <h1>TELEGRAM-БОТ</h1>
         <p>Ваш помощник в поиске нужного тура </p>
-        <button>Открыть</button>
+        <button @click="urlOnClick_TG()">Открыть</button>
     </div>
 </template>
 
@@ -22,6 +22,7 @@ import { onMounted } from "vue";
 
 gsap.registerPlugin(ScrollTrigger);
 
+
 onMounted(() => {
     gsap.from(".containerTGBOT__block", {
         scrollTrigger: {
@@ -34,4 +35,8 @@ onMounted(() => {
     })
 })
 
+
+const urlOnClick_TG = () => {
+    window.open("https://t.me/celebratelifetravel_bot")
+}
 </script>
