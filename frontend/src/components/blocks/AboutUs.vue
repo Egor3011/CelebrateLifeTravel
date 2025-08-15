@@ -11,7 +11,7 @@
         :slides-per-view="2.5" 
         :space-between="40" 
         :freeMode="true"
-        :breakpoints="{0: {slidesPerView: 1.5}, 320: {slidesPerView: 2.1}, 640: {slidesPerView: 2.8}, 1024: {slidesPerView: 3.5},}"
+        :breakpoints="{0: {slidesPerView: 1.2}, 320: {slidesPerView: 1.6, space-between: 15}, 640: {slidesPerView: 2.8}, 1024: {slidesPerView: 3.5},}"
         style="height: auto; padding: 40px 20px; overflow: hidden;">
             <swiper-slide v-for="el in comandInfo" >
                 <testCardCom :name-title="el.name" :img-src="el.imgSrc" :info="el.info" :position="el.position"/>
