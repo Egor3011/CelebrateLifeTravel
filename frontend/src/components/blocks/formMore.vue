@@ -6,7 +6,7 @@
                 <span>Заполните форму, и наш администратор в скором времени свяжется с вами, чтобы ответить на все вопросы</span>
                 <input type="text" placeholder="Ваше имя">
                 <input type="text" placeholder="yourmail@example.com">
-                <input type="text" placeholder="+ 7 (900) 900-90-90">
+                <input type="tel" placeholder="+ 7 (900) 900-90-90">
                 <button>Оставить заявку</button>
             </div>
             <div>
