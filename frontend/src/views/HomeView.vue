@@ -5,6 +5,8 @@ import startImage from '@/components/blocks/startImage.vue';
 import TGbot from '@/components/blocks/TGbot.vue';
 import tourBlock from '@/components/blocks/tourBlock.vue';
 import FAQBlock from '@/components/blocks/FAQBlock.vue';
+import reviewsBlock from '@/components/blocks/reviewsBlock.vue';
+import formMore from '@/components/blocks/formMore.vue';
 </script>
 
 <template>
@@ -15,9 +17,13 @@ import FAQBlock from '@/components/blocks/FAQBlock.vue';
 
     <tourBlock/>
 
+    <reviewsBlock/>
+
     <FAQBlock/>
+    <formMore/>
 
     <TGbot/>
+    <input type="text" name="" id="">
     <button>Забронировать место</button>
   </main>
 </template>

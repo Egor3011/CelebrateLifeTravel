@@ -8,7 +8,7 @@ import headerComp from './components/headerComp.vue';
 
 <template>
   <headerComp/>
-
+  
   <RouterView />
 </template>
 

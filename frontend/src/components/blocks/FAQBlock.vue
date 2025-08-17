@@ -1,8 +1,11 @@
 <script setup>
 import { gsap } from "gsap";
-    
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+import { ref } from "vue";
 import { onMounted } from "vue";
+
+const faqBlock = ref([{title: "kdskfjds", info: "ghbdtn nen nfrfz byaf"},{title: "kdskfjds", info: "ghbdtn nen nfrfz byaf"},{title: "kdskfjds", info: "ghbdtn nen nfrfz byaf"}])
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -10,11 +13,12 @@ onMounted(() => {
     gsap.from(".titleBlockDiv__FAQBlock", {
         scrollTrigger: {
             trigger: ".titleBlockDiv__FAQBlock",
-            start: "top bottom",
+            start: "10% top"
         },
         x: -100,
         opacity: 0,
-        duration: 1
+        duration: 1,
+        delay: 0
     })
 })
 
@@ -25,6 +29,13 @@ onMounted(() => {
         <div class="titleBlockDiv__FAQBlock">
             <span class="headH1">FAQ</span>
             <h2 class="titleBlock titleBlockDiv__FAQBlock__h1" style="width: 500px;">ОТВЕТЫ НА ЧАСТЫЕ ВОПРОСЫ</h2>
+        </div>
+
+        <div class="containerFAQ__blocks">
+            <div v-for="el in faqBlock" class="FAQButton__container">
+                <h3 class="FAQButton__titleText">{{ el.title }}</h3>
+                <p class="FAQButton__mainText"> {{ el.info }} </p>
+            </div>
         </div>
     </div>
 </template>
@@ -38,5 +49,38 @@ onMounted(() => {
     .titleBlockDiv__FAQBlock {
         width: 60vw;
     }
+}
+
+
+
+/*тут классы для кнопок*/
+
+.FAQButton__container {
+    padding: 0px 40px;
+    margin: 30px;
+
+    align-content: center;
+
+    border-radius: 20px;
+    box-shadow: 0 0 10px var(--vt-shadow-color);
+
+    overflow: hidden;
+    transition: 1s;
+}
+
+.FAQButton__container:hover {
+    transition: 1s;
+
+    .FAQButton__mainText {
+        display:block;
+    }
+}
+
+.FAQButton__titleText {
+    margin: 5px 0;
+}
+
+.FAQButton__mainText:not(.active) {
+    display: none;
 }
 </style>
