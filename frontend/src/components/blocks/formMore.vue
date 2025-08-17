@@ -80,7 +80,7 @@
         }
     }
     .container__formBlock {
-        padding: 5%;
+        padding: 20% 5%;
     }
 }
 </style>
