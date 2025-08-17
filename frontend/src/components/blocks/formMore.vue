@@ -79,5 +79,8 @@
             }
         }
     }
+    .container__formBlock {
+        padding: 5%;
+    }
 }
 </style>
