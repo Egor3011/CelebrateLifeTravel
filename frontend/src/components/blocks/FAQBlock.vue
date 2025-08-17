@@ -4,6 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import { ref } from "vue";
 import { onMounted } from "vue";
+import Acardion from "./Acardion.vue";
 
 const faqBlock = ref([{title: "kdskfjds", info: "ghbdtn nen nfrfz byaf"},{title: "kdskfjds", info: "ghbdtn nen nfrfz byaf"},{title: "kdskfjds", info: "ghbdtn nen nfrfz byaf"}])
 
@@ -32,10 +33,12 @@ onMounted(() => {
         </div>
 
         <div class="containerFAQ__blocks">
-            <div v-for="el in faqBlock" class="FAQButton__container">
-                <h3 class="FAQButton__titleText">{{ el.title }}</h3>
-                <p class="FAQButton__mainText"> {{ el.info }} </p>
-            </div>
+            <Acardion
+                v-for="(el, index) in faqBlock"
+                :key="index"
+                :question="el.title"
+                :answer="el.info"
+            />
         </div>
     </div>
 </template>
@@ -54,33 +57,4 @@ onMounted(() => {
 
 
 /*тут классы для кнопок*/
-
-.FAQButton__container {
-    padding: 0px 40px;
-    margin: 30px;
-
-    align-content: center;
-
-    border-radius: 20px;
-    box-shadow: 0 0 10px var(--vt-shadow-color);
-
-    overflow: hidden;
-    transition: 1s;
-}
-
-.FAQButton__container:hover {
-    transition: 1s;
-
-    .FAQButton__mainText {
-        display:block;
-    }
-}
-
-.FAQButton__titleText {
-    margin: 5px 0;
-}
-
-.FAQButton__mainText:not(.active) {
-    display: none;
-}
 </style>
