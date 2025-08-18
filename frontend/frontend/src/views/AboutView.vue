@@ -4,7 +4,6 @@
     <TourContentBlock :content="tourContent" backgroundImage="/bgStart.png" />
     <TourProgramBlock :programItems="programData" price="39.900" />
     
-
     <FAQBlock/>
     <formMore/>
     <TGbot/>
