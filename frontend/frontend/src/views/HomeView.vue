@@ -11,6 +11,7 @@ import formMore from '@/components/blocks/formMore.vue';
 
 <template>
   <main>
+
     <startImage/>
 
     <AboutUs/>
@@ -23,7 +24,7 @@ import formMore from '@/components/blocks/formMore.vue';
     <formMore/>
 
     <TGbot/>
-    <input type="text" name="" id="">
+    <h1>Че за хуйня?</h1>
     <button>Забронировать место</button>
   </main>
 </template>
