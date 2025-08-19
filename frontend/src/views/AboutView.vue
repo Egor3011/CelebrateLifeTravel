@@ -13,7 +13,12 @@
       :programItems="tourInfo.programData" 
       :price="tourInfo.price" 
     />
-    <TourDatesBlock :tourDates="tourInfo.tourDatesData" />
+
+    <div class="line container"></div>
+
+    <TourDatesBlock 
+      :tourDates="tourInfo.tourDatesData" 
+    />
     
     <FAQBlock/>
     <formMore/>
