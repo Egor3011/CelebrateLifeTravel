@@ -64,6 +64,7 @@ export default {
 
 .accordion-question {
   margin: 0;
+  text-align: start;
   font-size: 18px;
   font-weight: bold;
   color: #333;
@@ -89,6 +90,7 @@ export default {
   line-height: 1.6;
   max-height: 0;
   overflow: hidden;
+  text-align: start;
   transition: max-height 0.5s linear, padding 0.5s linear;
 }
 
