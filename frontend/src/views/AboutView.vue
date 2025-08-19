@@ -71,7 +71,10 @@ onMounted(() => {
     console.log('Tour parameter from URL:', tourValue);
     alert(tourValue);
 
-    tourInfo.value = axios.get(`/api/tours/${tourValue}`);
+    axios.get(`/api/tours/${tourValue}`).then((response) => {
+      alert(response.data);
+      tourInfo.value = response.data;
+    });
     // You can use tourValue here, e.g., to fetch specific tour data
   
     programData.value = tourInfo.value.programData;
