@@ -1,5 +1,5 @@
 <template>
-  <div class="tour-program-block">
+  <div class="tour-program-block container">
     <h2 class="block-title">Программа тура</h2>
     <div class="accordion-list">
       <AccordionItem
@@ -67,7 +67,6 @@ export default {
 }
 
 .accordion-list {
-  max-width: 800px;
   margin: 0 auto 40px auto;
 }
 
