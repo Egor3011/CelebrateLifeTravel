@@ -14,7 +14,9 @@
       :price="tourInfo.price" 
     />
 
-    <div class="line container"></div>
+    <div class="container">
+      <div class="line"></div>
+    </div>
 
     <TourDatesBlock 
       :tourDates="tourInfo.tourDatesData" 
