@@ -71,11 +71,8 @@ onMounted(() => {
   const tourValue = route.query.tour;
   if (tourValue) {
     console.log('Tour parameter from URL:', tourValue);
-    alert(tourValue);
 
     axios.get(`/api/tours/${tourValue}`).then((res) => {
-      alert(res.data);
-      alert("---")
       tourInfo.value = res.data;
     });
   
