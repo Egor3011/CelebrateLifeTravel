@@ -6,11 +6,11 @@
       :backgroundImage="tourInfo.backgroundImage"
     />
     <TourContentBlock 
-      :content="tourContent" 
+      :content="tourInfo.tourContent" 
       backgroundImage="/bgStart.png" 
     />
     <TourProgramBlock 
-      :programItems="programData" 
+      :programItems="tourInfo.programData" 
       :price="tourInfo.price" 
     />
     
@@ -78,12 +78,6 @@ onMounted(() => {
       alert("---")
       tourInfo.value = res.data;
     });
-    // You can use tourValue here, e.g., to fetch specific tour data
-    
-    alert(tourInfo.value);
-
-    programData.value = tourInfo.value.programData;
-    tourContent.value = tourInfo.value.tourContent;
   
   }
 });
