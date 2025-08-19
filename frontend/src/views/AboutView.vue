@@ -76,7 +76,9 @@ onMounted(() => {
       tourInfo.value = response.data;
     });
     // You can use tourValue here, e.g., to fetch specific tour data
-  
+    
+    alert(tourInfo.value);
+
     programData.value = tourInfo.value.programData;
     tourContent.value = tourInfo.value.tourContent;
   
