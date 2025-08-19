@@ -27,5 +27,19 @@
           "answer": "Контент для третьего дня."
         }
     ],
+    "tourDatesData": {
+        "Август": [
+            { "range": "5-9", "unavailable": false },
+            { "range": "12-16", "unavailable": false },
+            { "range": "19-23", "unavailable": false },
+            { "range": "26-30", "unavailable": false }
+        ],
+        "Сентябрь": [
+            { "range": "2-6", "unavailable": false },
+            { "range": "9-13", "unavailable": true },
+            { "range": "16-20", "unavailable": false },
+            { "range": "23-27", "unavailable": false }
+        ]
+    },
     "price": "39.900"
 }

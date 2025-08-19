@@ -13,13 +13,12 @@
       :programItems="tourInfo.programData" 
       :price="tourInfo.price" 
     />
+    <TourDatesBlock :tourDates="tourInfo.tourDatesData" />
     
-
     <FAQBlock/>
     <formMore/>
     <TGbot/>
-  
-  
+
   </div>
 </template>
 
@@ -30,6 +29,7 @@ import TourProgramBlock from '../components/blocks/TourProgramBlock.vue';
 import TGbot from '@/components/blocks/TGbot.vue';
 import FAQBlock from '@/components/blocks/FAQBlock.vue';
 import formMore from '@/components/blocks/formMore.vue';
+import TourDatesBlock from '@/components/TourDatesBlock.vue';
 
 import { useRoute } from 'vue-router';
 import { onMounted, ref } from 'vue';
