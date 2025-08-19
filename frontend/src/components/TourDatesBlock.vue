@@ -3,7 +3,7 @@
     <h2 class="block-title">Даты туров</h2>
     <div class="dates-grid">
       <div class="date-column" v-for="(monthData, monthName) in tourDates" :key="monthName">
-        <span class="month-name">{{ monthName }}</span>
+        <h3 class="month-name">{{ monthName }}</h3>
         <div class="days-list">
           <span 
             v-for="(days, index) in monthData"
