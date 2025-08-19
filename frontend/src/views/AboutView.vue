@@ -33,6 +33,8 @@ import formMore from '@/components/blocks/formMore.vue';
 
 import { useRoute } from 'vue-router';
 import { onMounted, ref } from 'vue';
+
+import axios from 'axios';
 // import bgStartImage from '../public/bgStart.png';
 
 const tourInfo = ref({});
