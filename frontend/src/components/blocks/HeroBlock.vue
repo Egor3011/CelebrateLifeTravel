@@ -1,14 +1,9 @@
 <template>
-  <div class="hero-block">
+  <div class="hero-block" :style="{ '--bg-image': `url(${backgroundImage})` }">
     <div class="overlay"></div>
     <div class="content">
-      <!-- <div class="nav-bar">
-        <div class="search-bar">
-          <p>CELEBRATE LIFE TRAVEL</p>
-        </div>
-      </div> -->
-      <h1 class="main-title">ДУШЕВНЫЙ ДАГЕСТАН</h1>
-      <p class="description">5 дней, топовые локации, комфортное проживание, национальная кухня</p>
+      <h1 class="main-title">{{ title }}</h1>
+      <p class="description">{{ description }}</p>
       <button class="book-button">Забронировать тур</button>
     </div>
   </div>
@@ -17,6 +12,20 @@
 <script>
 export default {
   name: 'HeroBlock',
+  props: {
+    title: {
+      type: String,
+      required: true,
+    },
+    description: {
+      type: String,
+      required: true,
+    },
+    backgroundImage: {
+      type: String,
+      required: true,
+    },
+  },
 };
 </script>
 
@@ -25,7 +34,6 @@ export default {
   position: relative;
   width: 100%;
   height: 100vh;
-  background-image: url('../public/bgStart.png'); /* Assuming bgStart.png is in the public folder */
   background-size: cover;
   background-position: center;
   display: flex;
@@ -33,6 +41,19 @@ export default {
   justify-content: space-between; /* Distribute space between nav and content */
   align-items: flex-start; /* Align content to the start (left) */
   color: white;
+}
+
+.hero-block::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: var(--bg-image);
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
 }
 
 .overlay {

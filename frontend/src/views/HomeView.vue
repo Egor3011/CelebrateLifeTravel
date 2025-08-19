@@ -23,7 +23,5 @@ import formMore from '@/components/blocks/formMore.vue';
     <formMore/>
 
     <TGbot/>
-    <input type="text" name="" id="">
-    <button>Забронировать место</button>
   </main>
 </template>

@@ -1,8 +1,18 @@
 <template>
   <div class="about">
-    <HeroBlock />
-    <TourContentBlock :content="tourContent" backgroundImage="/bgStart.png" />
-    <TourProgramBlock :programItems="programData" price="39.900" />
+    <HeroBlock
+      :title="tourInfo.title"
+      :description="tourInfo.description"
+      :backgroundImage="tourInfo.backgroundImage"
+    />
+    <TourContentBlock 
+      :content="tourContent" 
+      backgroundImage="/bgStart.png" 
+    />
+    <TourProgramBlock 
+      :programItems="programData" 
+      :price="tourInfo.price" 
+    />
     
 
     <FAQBlock/>
@@ -24,6 +34,8 @@ import formMore from '@/components/blocks/formMore.vue';
 import { useRoute } from 'vue-router';
 import { onMounted, ref } from 'vue';
 // import bgStartImage from '../public/bgStart.png';
+
+const tourInfo = ref({});
 
 const tourContent = ref([
   'СУЛАКСКИЙ КАНЬОН',
@@ -58,7 +70,13 @@ onMounted(() => {
   if (tourValue) {
     console.log('Tour parameter from URL:', tourValue);
     alert(tourValue);
+
+    tourInfo.value = axios.get(`/api/tours/${tourValue}`);
     // You can use tourValue here, e.g., to fetch specific tour data
+  
+    programData.value = tourInfo.value.programData;
+    tourContent.value = tourInfo.value.tourContent;
+  
   }
 });
 </script>
