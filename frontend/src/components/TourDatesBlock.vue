@@ -88,6 +88,10 @@ export default {
   text-decoration: line-through;
 }
 
+.book-button {
+  font-size: 20px;
+}
+
 /* Responsive styles */
 @media (max-width: 768px) {
   .block-title {
