@@ -140,7 +140,11 @@ export default {
   }
 
   .main-title {
-    font-size: 28px;
+    font-size: 32px;
+  }
+
+  .description {
+    font-size: 14px;
   }
 }
 </style>
