@@ -50,7 +50,7 @@ onMounted(() => {
 
 @media(max-width: 1024px) {
     .titleBlockDiv__FAQBlock {
-        width: 60vw;
+        width: 65%;
     }
 }
 
