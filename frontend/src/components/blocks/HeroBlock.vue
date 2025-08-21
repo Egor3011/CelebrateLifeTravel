@@ -138,5 +138,9 @@ export default {
   .hero-block {
     text-align: center;
   }
+
+  .main-title {
+    font-size: 28px;
+  }
 }
 </style>
