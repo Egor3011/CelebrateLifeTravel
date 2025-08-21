@@ -8,7 +8,7 @@ const props = defineProps({
 })
 
 const urlOnClick = (url) => {
-    window.open(url)
+    window.open("/about?tour=" + url)
 }
 </script>
 
