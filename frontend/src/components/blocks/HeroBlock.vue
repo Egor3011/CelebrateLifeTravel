@@ -137,6 +137,8 @@ export default {
 
   .content {
     text-align: center;
+    align-content: center;
+    align-items: center;
   }
 
   .main-title {
