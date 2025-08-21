@@ -68,6 +68,7 @@ export default {
 
 .content {
   position: relative;
+  align-content: center;
   z-index: 2;
   display: flex;
   flex-direction: column;
