@@ -52,7 +52,7 @@ onMounted(() => {
   if (tourValue) {
     console.log('Tour parameter from URL:', tourValue);
 
-    axios.get(`/api/tours/${tourValue}`).then((res) => {
+    axios.get(`https://tgcrm.s3.cloud.ru/test/dagestan.json`).then((res) => {
       tourInfo.value = res.data;
     });
   
