@@ -13,7 +13,7 @@ def startMes():
 @app.get("/tours/{tour_id}")
 def get_tour_info(tour_id: str):
     try:
-        with open(f"{tour_id}.json", "r", encoding='utf-8') as f:
+        with open(f"programs/{tour_id}.json", "r", encoding='utf-8') as f:
             data = json.load(f)
         return data
     except FileNotFoundError:
