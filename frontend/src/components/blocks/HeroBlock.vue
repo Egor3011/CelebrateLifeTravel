@@ -117,5 +117,13 @@ export default {
 
 .book-button {
   font-size: 18px;
+  border: none;
+
+  box-shadow: none;
+}
+
+.book-button:hover {
+  box-shadow: none;
+  border: none;
 }
 </style>
