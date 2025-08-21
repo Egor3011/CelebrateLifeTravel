@@ -29,7 +29,7 @@ onMounted(() => {
     <div class="container">
         <div class="titleBlockDiv__FAQBlock">
             <span class="headH1">FAQ</span>
-            <h2 class="titleBlock titleBlockDiv__FAQBlock__h1" style="width: 500px;">ОТВЕТЫ НА ЧАСТЫЕ ВОПРОСЫ</h2>
+            <h2 class="titleBlock titleBlockDiv__FAQBlock__h1">ОТВЕТЫ НА ЧАСТЫЕ ВОПРОСЫ</h2>
         </div>
 
         <div class="containerFAQ__blocks">
@@ -45,12 +45,12 @@ onMounted(() => {
 
 <style>
 .titleBlockDiv__FAQBlock {
-    margin-top: 100px;
+    margin-top: 60px;
 }
 
 @media(max-width: 1024px) {
     .titleBlockDiv__FAQBlock {
-        width: 65%;
+        width: 100%;
     }
 }
 
