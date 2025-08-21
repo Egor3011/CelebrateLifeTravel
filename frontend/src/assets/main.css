@@ -18,12 +18,11 @@ a:hover {
   padding: 3px 25px;
   border-radius: 20px;
   font-size: 12px;
-  width: auto;
 }
 
 button {
   cursor: pointer;
-  
+
   padding: 10px 20px;
   font-family: "Unbounded-Bold";
 
@@ -66,7 +65,6 @@ input {
 }
 
 .titleBlock {
-  width: 100%;
   margin-top: 0px;
 }
 
