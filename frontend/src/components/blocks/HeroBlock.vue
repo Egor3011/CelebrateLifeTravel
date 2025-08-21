@@ -126,4 +126,11 @@ export default {
   box-shadow: none;
   border: none;
 }
+
+
+@media(max-width: 1024px) {
+  .hero-block {
+    text-align: center;
+  }
+}
 </style>
