@@ -31,6 +31,8 @@ export default {
 
 <style scoped>
 .hero-block {
+  align-content: center;
+
   position: relative;
   width: 100%;
   height: 100vh;
@@ -68,7 +70,7 @@ export default {
 
 .content {
   position: relative;
-  align-content: center;
+
   z-index: 2;
   display: flex;
   flex-direction: column;
@@ -129,6 +131,10 @@ export default {
 
 
 @media(max-width: 1024px) {
+  .hero-block {
+    text-align: center;
+  }
+
   .hero-block {
     text-align: center;
   }
