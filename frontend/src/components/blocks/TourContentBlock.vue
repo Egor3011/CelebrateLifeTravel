@@ -28,16 +28,17 @@ export default {
 </script>
 
 <style scoped>
-.tour-content-block {
-  background-color: #2c3e50; /* Dark background similar to the image */
+.tour-content-block { /* Dark background similar to the image */
   padding: 50px 20px;
   text-align: center;
   color: white;
   background-size: cover;
   background-position: center;
+  
+  background-image: var(--bg-image); 
 }
 
-.tour-content-block[data-v-e6859550] {
+.tour-content-block {
   background-image: var(--bg-image); 
 }
 

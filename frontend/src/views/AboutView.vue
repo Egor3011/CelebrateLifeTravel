@@ -7,7 +7,7 @@
     />
     <TourContentBlock 
       :content="tourInfo.tourContent" 
-      backgroundImage="/bgStart.png" 
+      :backgroundImage="tourInfo.backgroundImage_tourContent" 
     />
     <TourProgramBlock 
       :programItems="tourInfo.programData" 
