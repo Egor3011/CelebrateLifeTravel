@@ -22,6 +22,8 @@ a:hover {
 }
 
 button {
+  cursor: pointer;
+  
   padding: 10px 20px;
   font-family: "Unbounded-Bold";
 
