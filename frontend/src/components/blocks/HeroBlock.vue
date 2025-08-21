@@ -135,7 +135,7 @@ export default {
     text-align: center;
   }
 
-  .hero-block {
+  .content {
     text-align: center;
   }
 
