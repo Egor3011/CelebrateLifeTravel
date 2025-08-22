@@ -21,6 +21,8 @@
     <TourDatesBlock 
       :tourDates="tourInfo.tourDatesData" 
     />
+
+    <LineRoad />
     
     <FAQBlock/>
     <formMore/>
@@ -37,6 +39,7 @@ import TGbot from '@/components/blocks/TGbot.vue';
 import FAQBlock from '@/components/blocks/FAQBlock.vue';
 import formMore from '@/components/blocks/formMore.vue';
 import TourDatesBlock from '@/components/TourDatesBlock.vue';
+import LineRoad from '@/components/blocks/LineRoad.vue';
 
 import { useRoute } from 'vue-router';
 import { onMounted, ref } from 'vue';
