@@ -1,12 +1,13 @@
 <script setup>
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import axios from "axios";
 
 import { ref } from "vue";
 import { onMounted } from "vue";
 import AccordionItem from "./AccordionItem.vue";
 
-const faqBlock = ref([{title: "kdskfjds", info: "Или как говорят наши туристы - самый бомбовый гид Дагестана. И это действительно так, в одном человеке собраны все самые лучшие качества отличного гида: любовь к своему родному региону, искрометный юмор, тактичность, забота, внимание к каждому туристу, великолепное знание истории Дагестана."},{title: "kdskfjds", info: "ghbdtn nen nfrfz byaf"},{title: "kdskfjds", info: "ghbdtn nen nfrfz byaf"}])
+const faqBlock = ref([])
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -20,6 +21,10 @@ onMounted(() => {
         opacity: 0,
         duration: 1,
         delay: 0
+    })
+
+    axios.get("https://be67bc91a5069fe3.mokky.dev/faq").then((res) => {
+        faqBlock.value = res.data
     })
 })
 
