@@ -3,7 +3,7 @@
     "tour_name": "SEA_TURKEY",
     "title": "МОРСКАЯ ТУРЦИЯ 2025",
     "description": "7 дней, Анталия, Каш, яхта, пляжи, параплан, Голубая лагуна и Долина Бабочек",
-    "backgroundImage": "https://tgcrm.s3.cloud.ru/CLT/toure_photo/sea_turkey_Main.jpeg",
+    "backgroundImage": "https://clt.s3.cloud.ru/photos/sea_turkey/main1",
     "tourContent": [
         "Анталия и Старый город",
         "Город Каш и пляж Капуташ",
@@ -33,7 +33,7 @@
         "https://clt.s3.cloud.ru/photos/sea_turkey/12",
         "https://clt.s3.cloud.ru/photos/sea_turkey/13"
     ],
-    "backgroundImage_tourContent": "https://tgcrm.s3.cloud.ru/CLT/toure_photo/sea_turkey_2.jpeg",
+    "backgroundImage_tourContent": "https://clt.s3.cloud.ru/photos/sea_turkey/main2",
     "programData": [
         {
             "question": "Первый день: Анталия, прилет, отдых и знакомство",
