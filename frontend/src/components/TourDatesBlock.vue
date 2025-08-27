@@ -14,7 +14,7 @@
         </div>
       </div>
     </div>
-    <button class="book-button">Забронировать тур</button>
+    <button class="book-button" @click="scrolToForm">Забронировать тур</button>
   </div>
 </template>
 
@@ -28,6 +28,12 @@ export default {
       default: () => ({}),
     },
   },
+  methods: {
+    scrolToForm() {
+        const el = document.getElementById("form");
+        el.scrollIntoView({behavior: "smooth"});
+    }
+  }
 };
 </script>
 

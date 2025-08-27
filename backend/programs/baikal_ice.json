@@ -18,6 +18,15 @@
         "Скала Дракон и фотосессии",
         "Экскурсия по Иркутску"
     ],
+    "photosInTour": [
+        "reviews/photo_2025-08-25 19.45.20.jpeg",
+        "reviews/photo_2025-08-25 19.45.21.jpeg",
+        "reviews/photo_2025-08-25 19.45.20.jpeg",
+        "reviews/photo_2025-08-25 19.45.20.jpeg",
+        "reviews/photo_2025-08-25 19.45.20.jpeg",
+        "reviews/photo_2025-08-25 19.45.20.jpeg",
+        "reviews/photo_2025-08-25 19.45.20.jpeg"
+    ],
     "backgroundImage_tourContent": "https://tgcrm.s3.cloud.ru/CLT/toure_photo/baical_test_BG2.jpeg",
     "programData": [
         {
@@ -95,5 +104,14 @@
             }
         ]
     },
+    "reviews": [
+        "reviews/photo_2025-08-25 19.45.20.jpeg",
+        "reviews/photo_2025-08-25 19.45.21.jpeg",
+        "reviews/photo_2025-08-25 19.45.20.jpeg",
+        "reviews/photo_2025-08-25 19.45.20.jpeg",
+        "reviews/photo_2025-08-25 19.45.20.jpeg",
+        "reviews/photo_2025-08-25 19.45.20.jpeg",
+        "reviews/photo_2025-08-25 19.45.20.jpeg"
+    ],
     "price": "98.000"
 }

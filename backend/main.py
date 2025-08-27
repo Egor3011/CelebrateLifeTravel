@@ -2,12 +2,51 @@ import fastapi
 import uvicorn
 import os
 import json
+from documents import documents
+
+from fastapi.responses import FileResponse
+
+import database
+from pydantic import BaseModel
 
 app = fastapi.FastAPI()
+app.include_router(documents)
+
+forms = {}
+
+class UserFormInfo(BaseModel):
+    name: str
+    phone: str
+    tour: str
+
 
 @app.get("/")
 def startMes():
-    return {"Hello": "world"}
+    return {"Status": "good"}
+
+
+@app.post("/newUserDt")
+def newUserDt(info: UserFormInfo):
+    print(info)
+    forms[info.phone] = info
+    return {"ID": info.phone}
+
+@app.get("/get_user_for_tg/{id}")
+def get_user(id: str):
+    return forms[id]
+
+
+@app.get("/reviews/{tour}")
+def get_all_reviews(tour: str):
+    try:
+        with open(f"reviews.json", "r", encoding='utf-8') as f:
+            if tour == "all":
+                data = json.load(f)
+                return data
+    except FileNotFoundError:
+        raise fastapi.HTTPException(status_code=404, detail="Review data not found")
+    except json.JSONDecodeError:
+        raise fastapi.HTTPException(status_code=500, detail="Error reading review data")
 
 
 @app.get("/tours/{tour_id}")

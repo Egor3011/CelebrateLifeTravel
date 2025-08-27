@@ -4,7 +4,7 @@
     <div class="content">
       <h1 class="main-title">{{ title }}</h1>
       <p class="description">{{ description }}</p>
-      <button class="book-button">Забронировать тур</button>
+      <button class="book-button" @click="scrolToForm">Забронировать тур</button>
     </div>
   </div>
 </template>
@@ -26,6 +26,12 @@ export default {
       required: true,
     },
   },
+  methods: {
+    scrolToForm() {
+        const el = document.getElementById("form");
+        el.scrollIntoView({behavior: "smooth"});
+    }
+  }
 };
 </script>
 
@@ -71,6 +77,7 @@ export default {
 .content {
   position: relative;
 
+  margin-top: 100px;
   z-index: 2;
   display: flex;
   flex-direction: column;

@@ -13,16 +13,9 @@
         navigation
         :breakpoints="{0: {slidesPerView: 1.0}, 320: {slidesPerView: 1.2, spaceBetween: 25}, 640: {slidesPerView: 2.1, spaceBetween: 40}, 1024: {slidesPerView: 2.6, spaceBetween: 50},}"
         style="padding: 0 20px; overflow: hidden;">
-            <swiper-slide>
-                <img src="/public/reviews/photo_2025-08-25 19.45.23.jpeg" style="width: 100%; height: auto;">
-            </swiper-slide>
-            <swiper-slide>
-                <img src="/public/reviews/photo_2025-08-25 19.45.20.jpeg" style="width: 100%; height: auto;">
-            </swiper-slide>
         
-            <swiper-slide v-for="el in reviews" >
-                <img :src="url_s3 + el" style="width: 100%; height: auto;">
-                <p>{{ url_s3 + el }}</p>
+            <swiper-slide v-for="el in props.reviewLinks" >
+                <img :src="el" style="width: 100%; height: auto;">
             </swiper-slide>
         </swiper>
     </div>
@@ -35,25 +28,14 @@ import "swiper/css/bundle";
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import axios from 'axios';
 
-import { onMounted, ref } from 'vue';
+import { onMounted, ref, defineProps } from 'vue';
 const modules = [Navigation, Pagination, Scrollbar, A11y]
 
-
-const reviews = ref([
-        "photo_2025-08-25 19.45.20.jpeg",
-        "photo_2025-08-25 19.45.21.jpeg"
-    ])
-const url_s3 = ref("/public/reviews/") 
-
-onMounted(() => {
-    axios.get("/api/reviews/all").then((res) => {
-        reviews.value = res.data.reviews
-        url_s3.value = res.data.url_s3
-    }).catch(error => {
-        alert(error)
-        console.error(error)
-    })
+const props = defineProps({
+  reviewLinks: {
+    type: Array,
+    default: () => [],
+  },
 });
 </script>

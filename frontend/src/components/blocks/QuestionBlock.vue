@@ -1,0 +1,209 @@
+<template>
+  <div class="question-block-container">
+    <div class="question-block">
+      <div class="content-section">
+        <h2 style="margin-top: 0;">ОСТАЛИСЬ ВОПРОСЫ?</h2>
+        <p>
+          Заполните форму, и наш администратор в скором
+          времени свяжется с вами, чтобы ответить на все
+          вопросы
+        </p>
+        <form @submit.prevent="addNemUserTG">
+          <input type="text" v-model="name" placeholder="Ваше имя" class="input-field" />
+          <input type="tel" v-model="phone" placeholder="+7 (999)-99-99" class="input-field" />
+          <div class="checkbox-container">
+            <input type="checkbox" id="consent" v-model="consent" />
+            <label for="consent">
+              Я предоставляю согласие на обработку персональных
+              данных,а также подтверждаю ознакомление и согласие
+              с Политикой конфиденциальности
+            </label>
+          </div>
+          <button type="submit" class="submit-button">Оставить заявку</button>
+        </form>
+      </div>
+      <div class="image-section">
+        <img src="/public/bgStart_11.png" alt="Landscape with person in national attire" />
+      </div>
+    </div>
+  </div>
+</template>
+
+<script setup>
+import { ref } from 'vue';
+import axios from 'axios';
+
+const name = ref('');
+const tour = ref('-');
+const phone = ref('');
+const consent = ref(false);
+
+
+const addNemUserTG = () => {
+    if(consent.value) {
+        axios.post("/api/newUserDt", {
+            "name": name.value,
+            "phone": phone.value,
+            "tour": tour.value
+        }).then((res) => {
+            console.log(res.data)
+            const urlTo_TG = "https://t.me/celebratelifetravel_bot?start=id_" + phone.value
+            window.open(urlTo_TG, '_blank')
+        }).catch(error => {
+            alert(error)
+        })
+        alert(name.value + phone.value + tour.value)
+    }
+    else {
+        alert('Пожалуйста, дайте согласие на обработку персональных данных.');
+    }
+    
+}
+</script>
+
+<style scoped>
+.question-block-container {
+  background-image: url('/public/bgStart.png'); /* Use your desired background image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for text readability */
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.question-block {
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px); /* Slightly transparent white for the form container */
+  
+  border: 2px solid var(--vt-text2-color);
+  border-radius: 20px;
+
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  display: flex;
+  overflow: hidden;
+  max-width: 1000px;
+  width: 90%; /* Adjust width for better responsiveness */
+  max-height: 90vh; /* Limit height to prevent overflow on smaller screens */
+  z-index: 1;
+}
+
+.content-section {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content-section h2 {
+  font-family: 'Unbounded-Bold';
+  color: var(--vt-background-color);
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.content-section p {
+  font-family: 'Montserrat';
+  font-size: 0.9em;
+  margin-bottom: 30px;
+}
+
+.input-field {
+  width: calc(100% - 20px);
+  padding: 5px 10px;
+  margin-bottom: 20px;
+  border: 1px solid var(--vt-shadow-color);
+  border-radius: 15px;
+  font-family: 'Montserrat';
+  font-size: 1em;
+  color: var(--vt-text-color);
+  background-color: #f8f8f8;
+}
+
+.input-field::placeholder {
+  color: var(--vt-text-h-color);
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.checkbox-container input[type="checkbox"] {
+  margin-right: 10px;
+  margin-top: 5px; /* Align checkbox with text */
+  min-width: 18px;
+  min-height: 18px;
+}
+
+.checkbox-container label {
+  font-family: 'Montserrat';
+  font-size: 0.8em;
+  line-height: 1.4;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 15px;
+  font-family: 'Unbounded-Bold';
+  font-size: 1.2em;
+  border: none;
+  box-shadow: none;
+  
+}
+
+.image-section {
+  flex: 1;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.image-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .question-block {
+    flex-direction: column;
+    box-shadow: none;
+    border-radius: 20px;
+  }
+
+  .content-section {
+    padding: 20px;
+  }
+
+  .content-section h2 {
+    font-size: 1.8em;
+    text-align: center;
+  }
+
+  .content-section p {
+    text-align: center;
+  }
+
+  .image-section {
+    display: none; /* Hide image on mobile */
+  }
+
+  .question-block-container {
+    padding: 0;
+  }
+}
+
+.question-block {
+    color: #FFFFFF;
+}
+</style>

@@ -57,6 +57,10 @@ onMounted(() => {
 </script>
 
 <style>
+.aboutUs-Block {
+    margin-top: 40px;
+}
+
 .titleBlockDiv__aboutUs {
     width: 100%;
 }

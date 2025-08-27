@@ -21,11 +21,18 @@
     <TourDatesBlock 
       :tourDates="tourInfo.tourDatesData" 
     />
-
-    <LineRoad />
-    
-    <FAQBlock/>
-    <formMore/>
+    <photosInTour
+      :photos="tourInfo.photosInTour"
+    />
+    <LineRoad style="margin: 50px 0;"/>
+    <reviewsBlock_AboutTour
+      :reviewLinks="tourInfo.reviews"
+      style="margin-bottom: 50px;"
+    />
+    <QuestionBlock_for_tour 
+      :title="tourInfo.title"
+      id="form"
+    />
     <TGbot/>
 
   </div>
@@ -40,6 +47,10 @@ import FAQBlock from '@/components/blocks/FAQBlock.vue';
 import formMore from '@/components/blocks/formMore.vue';
 import TourDatesBlock from '@/components/TourDatesBlock.vue';
 import LineRoad from '@/components/blocks/LineRoad.vue';
+import QuestionBlock_for_tour from '@/components/blocks/QuestionBlock_for_tour.vue';
+import photosInTour from '@/components/blocks/photosInTour.vue';
+import reviewsBlock_AboutTour from '@/components/blocks/reviewsBlock_AboutTour.vue';
+import QuestionBlock from '@/components/blocks/QuestionBlock.vue';
 
 import { useRoute } from 'vue-router';
 import { onMounted, ref } from 'vue';

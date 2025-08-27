@@ -1,13 +1,38 @@
+<script setup>
+import { ref } from 'vue';
+import axios from 'axios';
+
+const name = ref("")
+const phone = ref("")
+const tour = ref("")
+
+const addNemUserDT = () => {
+    axios.post("/api/newUserDt", {
+        "name": name.value,
+        "phone": phone.value,
+        "tour": tour.value
+    }).then((res) => {
+        console.log(res.data)
+        const urlTo_TG = "https://t.me/celebratelifetravel_bot?start=id_" + phone.value
+        window.open(urlTo_TG, '_blank')
+    }).catch(error => {
+        alert(error)
+    })
+    alert(name.value + phone.value + tour.value)
+}
+</script>
+
+
 <template>
     <div class="container__formBlock">
         <div class="containerForm">
             <div style="display: block;">
                 <h1>ОСТАЛИСЬ ВОПРОСЫ?</h1>
                 <p>Заполните форму, и наш администратор в скором времени свяжется с вами, чтобы ответить на все вопросы</p>
-                <input type="text" placeholder="Ваше имя">
-                <input type="text" placeholder="yourmail@example.com">
-                <input type="tel" placeholder="+ 7 (900) 900-90-90">
-                <button>Оставить заявку</button>
+                <input type="text" placeholder="Ваше имя" v-model="name">
+                <input type="text" placeholder="Название тура" v-model="tour">
+                <input type="tel" placeholder="+ 7 (900) 900-90-90" v-model="phone">
+                <button @click="addNemUserDT">Оставить заявку</button>
             </div>
             <div>
                 <img class="img2In__firmBlock" src="/public/bgStart.png" style="width: 90%; border-radius: 20px; height: 100%; margin-left: 10%;">

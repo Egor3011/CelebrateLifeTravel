@@ -1,11 +1,11 @@
 <template>
-    <div class="container-startImage">
+    <div class="container__startImage">
         <h1>АВТОРСКИЕ ТУРЫ</h1>
     </div>
 </template>
 
 <style>
-.container-startImage {
+.container__startImage {
     height: 100vh;
     width: 100vw;
 

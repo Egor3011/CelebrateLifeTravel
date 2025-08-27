@@ -42,7 +42,7 @@ body {
   padding: 0;
 
   width: 100vw;
-
+  overflow-x: hidden; /* Prevent horizontal scroll on all screens */
 
   color: var(--vt-text-color);
   font-family:
@@ -59,6 +59,10 @@ body {
     'Droid Sans',
     'Helvetica Neue',
     sans-serif;
+}
+
+body.no-scroll {
+  overflow: hidden;
 }
 
 @media (max-width: 1024px) {

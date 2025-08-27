@@ -23,3 +23,13 @@ def addNewUser(name: str, tel: str, tour: str):
         return connection.commit()
     except Exception as ex:
         return ex
+
+
+def getUserInfo(id: int):
+    try:
+        cursor, connection = mysqlDB()
+        cursor.execute(f"SELECT name, tel, tour FROM `users` WHERE id = {id}")
+        userInfo = cursor.fetchall()
+        return userInfo
+    except Exception as ex:
+        return ex
