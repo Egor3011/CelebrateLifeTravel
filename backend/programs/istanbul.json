@@ -116,5 +116,10 @@
             }
         ]
     },
+    "reviews": [
+        "https://clt.s3.cloud.ru/reviews/9",
+        "https://clt.s3.cloud.ru/reviews/10",
+        "https://clt.s3.cloud.ru/reviews/13"
+    ],
     "price": "57.900"
 }
