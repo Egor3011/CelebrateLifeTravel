@@ -19,13 +19,15 @@
         "Экскурсия по Иркутску"
     ],
     "photosInTour": [
-        "reviews/photo_2025-08-25 19.45.20.jpeg",
-        "reviews/photo_2025-08-25 19.45.21.jpeg",
-        "reviews/photo_2025-08-25 19.45.20.jpeg",
-        "reviews/photo_2025-08-25 19.45.20.jpeg",
-        "reviews/photo_2025-08-25 19.45.20.jpeg",
-        "reviews/photo_2025-08-25 19.45.20.jpeg",
-        "reviews/photo_2025-08-25 19.45.20.jpeg"
+        "https://clt.s3.cloud.ru/photos/istanbul_capadocia/1",
+        "https://clt.s3.cloud.ru/photos/istanbul_capadocia/2",
+        "https://clt.s3.cloud.ru/photos/istanbul_capadocia/3",
+        "https://clt.s3.cloud.ru/photos/istanbul_capadocia/4",
+        "https://clt.s3.cloud.ru/photos/istanbul_capadocia/5",
+        "https://clt.s3.cloud.ru/photos/istanbul_capadocia/6",
+        "https://clt.s3.cloud.ru/photos/istanbul_capadocia/7",
+        "https://clt.s3.cloud.ru/photos/istanbul_capadocia/8",
+        "https://clt.s3.cloud.ru/photos/istanbul_capadocia/9"
     ],
     "backgroundImage_tourContent": "https://tgcrm.s3.cloud.ru/CLT/toure_photo/baical_test_BG2.jpeg",
     "programData": [

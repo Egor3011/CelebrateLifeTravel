@@ -2,7 +2,7 @@
     <div class="reviewBlock container">
         <div class="titleBlockDiv__reviewBlock">
             <span class="headH1">Отзывы</span>
-            <h2 class="titleBlock">Ваши отзывы о наших путешествиях</h2>
+            <h2 class="titleBlock">Ваши отзывы об этом туре</h2>
         </div>
 
         <swiper 
