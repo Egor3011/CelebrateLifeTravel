@@ -26,6 +26,7 @@
     />
     <LineRoad style="margin: 50px 0;"/>
     <reviewsBlock_AboutTour
+      v-if="tourInfo.reviews"
       :reviewLinks="tourInfo.reviews"
       style="margin-bottom: 50px;"
     />
