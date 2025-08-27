@@ -2,7 +2,7 @@
     <div class="aboutUs-Block container">
         <div class="titleBlockDiv__aboutUs">
             <span class="headH1 komand--AboutUs">Команда</span>
-            <h2 class="titleBlock" style="width: 500px;">CELEBRATE LIFE TRAVEL  – это двигатель ваших приключений</h2>
+            <h2 class="titleBlock">CELEBRATE LIFE TRAVEL  – это двигатель ваших приключений</h2>
         </div>
         <div style="text-align: center;">
             <h2>Наша команда</h2>
