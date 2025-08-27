@@ -18,6 +18,21 @@
         "Атмосферные улочки Каша",
         "Море, солнце и релакс"
     ],
+    "photosInTour": [
+        "https://clt.s3.cloud.ru/photos/sea_turkey/1",
+        "https://clt.s3.cloud.ru/photos/sea_turkey/2",
+        "https://clt.s3.cloud.ru/photos/sea_turkey/3",
+        "https://clt.s3.cloud.ru/photos/sea_turkey/4",
+        "https://clt.s3.cloud.ru/photos/sea_turkey/5",
+        "https://clt.s3.cloud.ru/photos/sea_turkey/6",
+        "https://clt.s3.cloud.ru/photos/sea_turkey/7",
+        "https://clt.s3.cloud.ru/photos/sea_turkey/8",
+        "https://clt.s3.cloud.ru/photos/sea_turkey/9",
+        "https://clt.s3.cloud.ru/photos/sea_turkey/10",
+        "https://clt.s3.cloud.ru/photos/sea_turkey/11",
+        "https://clt.s3.cloud.ru/photos/sea_turkey/12",
+        "https://clt.s3.cloud.ru/photos/sea_turkey/13"
+    ],
     "backgroundImage_tourContent": "https://tgcrm.s3.cloud.ru/CLT/toure_photo/sea_turkey_2.jpeg",
     "programData": [
         {
