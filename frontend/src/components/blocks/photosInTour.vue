@@ -8,14 +8,14 @@
         <swiper 
         :modules="modules"
         :slides-per-view="1.2" 
-        :space-between="50" 
+        :space-between="10" 
         :freeMode="true"
         navigation
-        :breakpoints="{0: {slidesPerView: 1.0}, 640: {slidesPerView: 1.2, spaceBetween: 30}, 1024: {slidesPerView: 2, spaceBetween: 40},}"
+        :breakpoints="{0: {slidesPerView: 1.0, spaceBetween: 10}, 640: {slidesPerView: 1.2, spaceBetween: 20}, 1024: {slidesPerView: 2, spaceBetween: 40},}"
         style="padding: 0 20px; overflow: hidden;">
         
             <swiper-slide v-for="el in props.photos" >
-                <img :src="el" style="width: 100%; height: auto;">
+                <img :src="el" style="width: 100%; height: auto; border-radius: 30px;">
             </swiper-slide>
         </swiper>
     </div>

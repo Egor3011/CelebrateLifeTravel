@@ -13,6 +13,16 @@
         "ПУСТЫНЯ БАРХАН САРЫКУМ",
         "ФОТОСЕССИЯ НА ЗНАМЕНИТОМ ЯЗЫКЕ ТРОЛЛЯ"
     ],
+    "photosInTour": [
+        "https://clt.s3.cloud.ru/photos/dagestan_5/1",
+        "https://clt.s3.cloud.ru/photos/dagestan_5/2",
+        "https://clt.s3.cloud.ru/photos/dagestan_5/3",
+        "https://clt.s3.cloud.ru/photos/dagestan_5/4",
+        "https://clt.s3.cloud.ru/photos/dagestan_5/5",
+        "https://clt.s3.cloud.ru/photos/dagestan_5/6",
+        "https://clt.s3.cloud.ru/photos/dagestan_5/7",
+        "https://clt.s3.cloud.ru/photos/dagestan_5/8"
+    ],
     "backgroundImage_tourContent": "/bgStart.png",
     "programData": [
         {

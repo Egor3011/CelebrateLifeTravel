@@ -16,6 +16,20 @@
         "Дарьяльское ущелье",
         "Грузинская кухня и традиции"
     ],
+    "photosInTour": [
+        "https://clt.s3.cloud.ru/photos/perezaGruzia/1",
+        "https://clt.s3.cloud.ru/photos/perezaGruzia/2",
+        "https://clt.s3.cloud.ru/photos/perezaGruzia/3",
+        "https://clt.s3.cloud.ru/photos/perezaGruzia/4",
+        "https://clt.s3.cloud.ru/photos/perezaGruzia/5",
+        "https://clt.s3.cloud.ru/photos/perezaGruzia/6",
+        "https://clt.s3.cloud.ru/photos/perezaGruzia/7",
+        "https://clt.s3.cloud.ru/photos/perezaGruzia/8",
+        "https://clt.s3.cloud.ru/photos/perezaGruzia/9",
+        "https://clt.s3.cloud.ru/photos/perezaGruzia/10",
+        "https://clt.s3.cloud.ru/photos/perezaGruzia/11",
+        "https://clt.s3.cloud.ru/photos/perezaGruzia/12"
+    ],
     "backgroundImage_tourContent": "/bgStart.png",
     "programData": [
         {
