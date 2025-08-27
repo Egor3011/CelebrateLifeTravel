@@ -1,5 +1,5 @@
 {
-    "url_s3": "https://clt.s3.cloud.ru",
+    "url_s3": "https://clt.s3.cloud.ru/",
     "reviews": [
         "reviews/1",
         "reviews/2",
