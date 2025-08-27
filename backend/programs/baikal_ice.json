@@ -3,7 +3,7 @@
     "tour_name": "BAIKAL_ICE",
     "title": "ЛЁД БАЙКАЛА 2026",
     "description": "5 дней, катание на коньках, хивусы, острова, шаманские обряды и ледяные скульптуры",
-    "backgroundImage": "https://tgcrm.s3.cloud.ru/CLT/toure_photo/baikal.jpeg",
+    "backgroundImage": "https://clt.s3.cloud.ru/photos/baical/main1",
     "tourContent": [
         "Фольклорная программа и обряды",
         "Дегустация бурятских блюд и настоек",
@@ -34,7 +34,7 @@
         "https://clt.s3.cloud.ru/photos/baical/13",
         "https://clt.s3.cloud.ru/photos/baical/14"
     ],
-    "backgroundImage_tourContent": "https://tgcrm.s3.cloud.ru/CLT/toure_photo/baical_test_BG2.jpeg",
+    "backgroundImage_tourContent": "https://clt.s3.cloud.ru/photos/baical/main2",
     "programData": [
         {
             "question": "1 день: Иркутск, этнопарк Золотая Орда, выезд на Байкал",
