@@ -13,13 +13,6 @@
         navigation
         :breakpoints="{0: {slidesPerView: 1.0}, 320: {slidesPerView: 1.2, spaceBetween: 25}, 640: {slidesPerView: 2.1, spaceBetween: 40}, 1024: {slidesPerView: 2.6, spaceBetween: 50},}"
         style="padding: 0 20px; overflow: hidden;">
-            <swiper-slide>
-                <img src="/public/reviews/photo_2025-08-25 19.45.23.jpeg" style="width: 100%; height: auto;">
-            </swiper-slide>
-            <swiper-slide>
-                <img src="/public/reviews/photo_2025-08-25 19.45.20.jpeg" style="width: 100%; height: auto;">
-            </swiper-slide>
-        
             <swiper-slide v-for="el in reviews" >
                 <img :src="url_s3 + el" style="width: 100%; height: auto;">
                 <p>{{ url_s3 + el }}</p>
