@@ -5,7 +5,7 @@
     </div>
     <div class="footer-content">
       
-      <div class="footer-section navigation">
+      <div class="footer-section navigation" v-show="false">
         <h3>Навигация</h3>
         <ul>
           <li><a href="#hero">Главная</a></li>
