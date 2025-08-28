@@ -22,9 +22,9 @@
         <p>ОГРНИП: 321508100199293</p>
         <h3>Документы</h3>
         <ul>
-          <li><a href="/documents#ip_info">Данные ИП</a></li>
-          <li><a href="/documents#politika_konf">Политика конфиденциальности</a></li>
-          <li><a href="/documents#oferta">Договор-оферта</a></li>
+          <li><a href="/documents#ip_info" class="link_blue">Данные ИП</a></li>
+          <li><a href="/documents#politika_konf" class="link_blue">Политика конфиденциальности</a></li>
+          <li><a href="/documents#oferta" class="link_blue">Договор-оферта</a></li>
         </ul>
       </div>
     </div>
@@ -80,7 +80,8 @@
 }
 
 .footer-section a {
-  color: var(--vt-text2-color);
+  color: #0073FF;
+  text-decoration: underline;
   text-decoration: none;
   transition: color 0.3s ease;
 }

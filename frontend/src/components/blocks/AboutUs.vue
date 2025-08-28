@@ -96,6 +96,7 @@ onMounted(() => {
         margin-right: 40px;
         width: 35%; 
         height: auto;
+        max-height: 80vh;
         border-radius: 20px;
     }
     
