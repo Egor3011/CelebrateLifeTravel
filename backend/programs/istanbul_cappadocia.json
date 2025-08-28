@@ -3,7 +3,7 @@
     "tour_name": "ISTANBUL_CAPPADOCIA",
     "title": "СТАМБУЛ + КАППАДОКИЯ 2025",
     "description": "7 дней, тур с фотографом, Стамбул, Каппадокия, полет на воздушном шаре, яхта по Босфору, фотосессия",
-    "backgroundImage": "https://tgcrm.s3.cloud.ru/CLT/istanbul_cappadocia_main.jpeg",
+    "backgroundImage": "https://clt.s3.cloud.ru/photos/istanbul_capadocia/3",
     "tourContent": [
         "Прогулка по Стамбулу",
         "Голубая мечеть и Айя-София",
@@ -27,7 +27,7 @@
         "https://clt.s3.cloud.ru/photos/istanbul_capadocia/8",
         "https://clt.s3.cloud.ru/photos/istanbul_capadocia/9"
     ],
-    "backgroundImage_tourContent": "/bgStart.png",
+    "backgroundImage_tourContent": "https://clt.s3.cloud.ru/photos/istanbul_capadocia/2",
     "programData": [
         {
             "question": "День 1: Прилет в Стамбул",

@@ -3,7 +3,7 @@
     "tour_name": "GEORGIA_RELOAD",
     "title": "ПЕРЕЗАГРУЗИЯ 2025",
     "description": "6 дней, Тбилиси, Кахетия, Казбеги, пещеры, каньоны, вино и кавказская кухня",
-    "backgroundImage": "https://tgcrm.s3.cloud.ru/CLT/georgia_main.jpeg",
+    "backgroundImage": "https://clt.s3.cloud.ru/photos/perezaGruzia/5",
     "tourContent": [
         "Тбилиси и Мцхета",
         "Старинные монастыри и храмы",
@@ -30,7 +30,7 @@
         "https://clt.s3.cloud.ru/photos/perezaGruzia/11",
         "https://clt.s3.cloud.ru/photos/perezaGruzia/12"
     ],
-    "backgroundImage_tourContent": "/bgStart.png",
+    "backgroundImage_tourContent": "https://clt.s3.cloud.ru/photos/perezaGruzia/8",
     "programData": [
         {
             "question": "Первый день: прибытие в Тбилиси",

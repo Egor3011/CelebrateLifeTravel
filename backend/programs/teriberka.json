@@ -3,7 +3,7 @@
     "tour_name": "TERIBERKA",
     "title": "СЕВЕРНОЕ СИЯНИЕ И КИТЫ",
     "description": "3 дня, северное сияние, киты, Териберка и Мурманск",
-    "backgroundImage": "https://tgcrm.s3.cloud.ru/CLT/teriberka_main.jpeg",
+    "backgroundImage": "https://clt.s3.cloud.ru/photos/teriberka/19",
     "tourContent": [
         "СЕВЕРНОЕ СИЯНИЕ",
         "МОРСКАЯ ПРОГУЛКА И КИТЫ",
@@ -45,7 +45,7 @@
         "https://clt.s3.cloud.ru/photos/teriberka/25",
         "https://clt.s3.cloud.ru/photos/teriberka/26"
     ],
-    "backgroundImage_tourContent": "/bgStart.png",
+    "backgroundImage_tourContent": "https://clt.s3.cloud.ru/photos/teriberka/24",
     "programData": [
         {
             "question": "ПЕРВЫЙ ДЕНЬ: МУРМАНСК, ЛЕДОКОЛ 'ЛЕНИН', ОБЗОРНАЯ ЭКСКУРСИЯ, СЕВЕРНОЕ СИЯНИЕ",

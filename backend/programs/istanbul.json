@@ -3,7 +3,7 @@
     "tour_name": "ISTANBUL",
     "title": "СТАМБУЛ 2025",
     "description": "4 дня, прогулка по Босфору, Голубая мечеть, Айя-София, Балат, Галатская башня, шоппинг и гастрономия",
-    "backgroundImage": "https://tgcrm.s3.cloud.ru/CLT/istanbul_main.jpeg",
+    "backgroundImage": "https://clt.s3.cloud.ru/photos/istanbul/4",
     "tourContent": [
         "Прогулка по Босфору",
         "Айя-София и Голубая мечеть",
@@ -29,7 +29,7 @@
         "https://clt.s3.cloud.ru/photos/istanbul/12",
         "https://clt.s3.cloud.ru/photos/istanbul/13"
     ],
-    "backgroundImage_tourContent": "/bgStart.png",
+    "backgroundImage_tourContent": "https://clt.s3.cloud.ru/photos/istanbul/3",
     "programData": [
         {
             "question": "День 1: Прилет в Стамбул",

@@ -3,7 +3,7 @@
     "tour_name": "OSETIA_INGUSHETIA",
     "title": "ОСЕТИЯ И ИНГУШЕТИЯ",
     "description": "5 дней, горные каньоны, древние башни, термальные источники и традиции Кавказа",
-    "backgroundImage": "https://tgcrm.s3.cloud.ru/CLT/osetia_main.jpeg",
+    "backgroundImage": "https://clt.s3.cloud.ru/photos/osetia_ingushetia/9",
     "tourContent": [
         "Живописные водопады",
         "Горные каньоны",
@@ -32,7 +32,7 @@
         "https://clt.s3.cloud.ru/photos/osetia_ingushetia/11",
         "https://clt.s3.cloud.ru/photos/osetia_ingushetia/12"
     ],
-    "backgroundImage_tourContent": "/bgStart.png",
+    "backgroundImage_tourContent": "https://clt.s3.cloud.ru/photos/osetia_ingushetia/4",
     "programData": [
         {
             "question": "Первый день: знакомство с Северной Осетией",

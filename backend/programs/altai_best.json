@@ -3,7 +3,7 @@
     "tour_name": "BEST_ALTAI",
     "title": "ЛУЧШЕЕ НА АЛТАЕ ЗА 7 ДНЕЙ 2025",
     "description": "Авторский тур на Алтай, 7 дней по самым красивым и сакральным местам региона, включены экскурсии, переезды и проживание",
-    "backgroundImage": "https://tgcrm.s3.cloud.ru/CLT/altai_main.jpeg",
+    "backgroundImage": "https://clt.s3.cloud.ru/photos/altai/2",
     "tourContent": [
         "Чуйский тракт – одна из самых красивых дорог мира",
         "Смотровая площадка «Чёртов палец»",
@@ -29,7 +29,7 @@
         "https://clt.s3.cloud.ru/photos/altai/10",
         "https://clt.s3.cloud.ru/photos/altai/11"
     ],
-    "backgroundImage_tourContent": "/bgStart.png",
+    "backgroundImage_tourContent": "https://clt.s3.cloud.ru/photos/altai/7",
     "programData": [
         {
             "question": "День 1: Встреча и знакомство с Алтаем",

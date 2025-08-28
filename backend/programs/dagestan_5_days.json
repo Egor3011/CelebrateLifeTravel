@@ -3,7 +3,7 @@
     "tour_name": "DAGESTAN",
     "title": "ДАГЕСТАН 5 ДНЕЙ",
     "description": "5 дней, Сулакский каньон, Чиркейское водохранилище, Гамсутль, Дербент и Бархан Сарыкум",
-    "backgroundImage": "https://tgcrm.s3.cloud.ru/CLT/dagestan_main.jpeg",
+    "backgroundImage": "https://clt.s3.cloud.ru/photos/dagestan_5/3",
     "tourContent": [
         "Сулакский каньон",
         "Чиркейское и Ирганайское водохранилища",
@@ -30,7 +30,7 @@
         "https://clt.s3.cloud.ru/photos/dagestan_5/7",
         "https://clt.s3.cloud.ru/photos/dagestan_5/8"
     ],
-    "backgroundImage_tourContent": "/bgStart.png",
+    "backgroundImage_tourContent": "https://clt.s3.cloud.ru/photos/dagestan_5/7",
     "programData": [
         {
             "question": "Первый день: Сулакский каньон, катер, пустыня Бархан Сарыкум",
