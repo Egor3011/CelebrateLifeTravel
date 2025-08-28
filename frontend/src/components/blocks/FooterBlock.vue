@@ -82,7 +82,6 @@
 .footer-section a {
   color: #0073FF;
   text-decoration: underline;
-  text-decoration: none;
   transition: color 0.3s ease;
 }
 
