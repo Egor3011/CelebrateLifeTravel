@@ -58,52 +58,6 @@
         }
     ],
     "tourDatesData": {
-        "Апрель": [
-            {
-                "range": "18-23",
-                "unavailable": false
-            }
-        ],
-        "Май": [
-            {
-                "range": "4-9",
-                "unavailable": false
-            },
-            {
-                "range": "22-27",
-                "unavailable": false
-            },
-            {
-                "range": "28.04-3.05",
-                "unavailable": false
-            }
-        ],
-        "Июнь": [
-            {
-                "range": "19-24",
-                "unavailable": false
-            }
-        ],
-        "Июль": [
-            {
-                "range": "5-10",
-                "unavailable": false
-            },
-            {
-                "range": "16-21",
-                "unavailable": false
-            }
-        ],
-        "Август": [
-            {
-                "range": "2-7",
-                "unavailable": false
-            },
-            {
-                "range": "21-26",
-                "unavailable": false
-            }
-        ],
         "Сентябрь": [
             {
                 "range": "7-12",

@@ -61,32 +61,6 @@
         }
     ],
     "tourDatesData": {
-        "Июнь": [
-            {
-                "range": "30.06-6.07",
-                "unavailable": false
-            }
-        ],
-        "Июль": [
-            {
-                "range": "1-7",
-                "unavailable": false
-            },
-            {
-                "range": "9-15",
-                "unavailable": false
-            }
-        ],
-        "Август": [
-            {
-                "range": "7-13",
-                "unavailable": false
-            },
-            {
-                "range": "21-27",
-                "unavailable": false
-            }
-        ],
         "Сентябрь": [
             {
                 "range": "16-22",
