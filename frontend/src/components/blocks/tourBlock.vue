@@ -36,7 +36,7 @@ onMounted(() => {
     <div class="container">
         <div class="titleBlockDiv__tourBlock">
             <span class="headH1">Каталог туров</span>
-            <h2 class="titleBlock titleBlockDiv__tourBlock__h1" style="width: 500px;">Наши направления</h2>
+            <h2 class="titleBlock titleBlockDiv__tourBlock__h1">Наши направления</h2>
         </div>
         <Swiper 
         :slides-per-view="2.5" 
