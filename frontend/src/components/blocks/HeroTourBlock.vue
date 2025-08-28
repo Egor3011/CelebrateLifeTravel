@@ -3,7 +3,7 @@
     <div class="content">
       <img src="/public/celebrate_life_travel.svg" alt="Celebrate Life Travel Logo" class="logo" />
       <h1>АВТОРСКИЕ ТУРЫ</h1>
-      <p>Туры, после которых хочется путешествовать каждый день</p>
+      <p>Насыщенные и комфортные путешествия, с душой и вниманием к деталям</p>
       <button class="book-tour-button" @click="scrolToForm">Забронировать тур</button>
     </div>
   </div>

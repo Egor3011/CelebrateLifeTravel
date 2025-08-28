@@ -24,9 +24,11 @@
             <h2>Наша команда</h2>
         </div>
         <Swiper 
+        :modules="modules"
         :slides-per-view="2.5" 
         :space-between="40" 
         :freeMode="true"
+        navigation
         :breakpoints="{0: {slidesPerView: 1.2}, 320: {slidesPerView: 1.4, spaceBetween: 10}, 640: {slidesPerView: 2.8, spaceBetween: 25}, 1024: {slidesPerView: 3.5, spaceBetween: 40},}"
         style="height: auto; padding: 40px 20px; overflow: hidden;">
             <swiper-slide v-for="el in comandInfo" >
@@ -39,8 +41,14 @@
 <script setup>
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import {Swiper, SwiperSlide} from "swiper/vue";
 import "swiper/css/bundle";
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+
 import axios from "axios";
 
 import { ref } from "vue";
@@ -49,6 +57,7 @@ import { onMounted } from "vue";
 
 import testCardCom from "./testCardCom.vue";
 
+const modules = [Navigation, Pagination, Scrollbar, A11y]
 gsap.registerPlugin(ScrollTrigger);
 
 const comandInfo = ref([])
