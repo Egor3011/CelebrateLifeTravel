@@ -18,6 +18,9 @@
                 <img :src="el" style="width: 100%; height: auto;">
             </swiper-slide>
         </swiper>
+        <div style="text-align: center;">
+            <button @click="openReviews">Больше отзывов</button>
+        </div>
     </div>
 </template>
 
@@ -38,4 +41,9 @@ const props = defineProps({
     default: () => [],
   },
 });
+
+
+const openReviews = () => {
+    window.open("https://youtravel.me/expert/73923/екатерина", "_blank")
+}
 </script>

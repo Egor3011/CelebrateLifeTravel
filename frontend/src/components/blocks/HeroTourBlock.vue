@@ -154,6 +154,7 @@ p {
   .book-tour-button {
     width: 80%;
     max-width: 300px;
+    font-size: 12px;
   }
 }
 </style>

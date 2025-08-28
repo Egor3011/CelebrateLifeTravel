@@ -48,6 +48,8 @@ onMounted(() => {
   tour.value = props.title
 });
 
+
+
 const addNemUserTG = () => {
     if(consent.value) {
         axios.post("/api/newUserDt", {
@@ -55,9 +57,7 @@ const addNemUserTG = () => {
             "phone": phone.value,
             "tour": tour.value
         }).then((res) => {
-            console.log(res.data)
-            const urlTo_TG = "https://t.me/celebratelifetravel_bot?start=id_" + phone.value
-            window.open(urlTo_TG, '_blank')
+            openUrl("https://t.me/celebratelifetravel_bot?start=id_" + res.data.ID)
         }).catch(error => {
             alert(error)
         })
@@ -66,7 +66,11 @@ const addNemUserTG = () => {
     else {
         alert('Пожалуйста, дайте согласие на обработку персональных данных.');
     }
-    
+}
+
+
+const openUrl = (url) => {
+  window.open(url, '_blank')
 }
 </script>
 
@@ -209,6 +213,13 @@ const addNemUserTG = () => {
 
   .question-block-container {
     padding: 0;
+  }
+}
+
+@media(max-width: 1024px) {
+  .checkbox-container input[type="checkbox"] {
+    min-width: 10px;
+    min-height: 10px;
   }
 }
 

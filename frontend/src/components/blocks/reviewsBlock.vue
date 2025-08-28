@@ -15,9 +15,11 @@
         style="padding: 0 20px; overflow: hidden;">
             <swiper-slide v-for="el in reviews" >
                 <img :src="url_s3 + el" style="width: 100%; height: auto;">
-                <p>{{ url_s3 + el }}</p>
             </swiper-slide>
         </swiper>
+        <div style="text-align: center;">
+            <button @click="openReviews">Больше отзывов</button>
+        </div>
     </div>
 </template>
 
@@ -49,4 +51,9 @@ onMounted(() => {
         console.error(error)
     })
 });
+
+
+const openReviews = () => {
+    window.open("https://youtravel.me/expert/73923/екатерина", "_blank")
+}
 </script>
