@@ -1,6 +1,6 @@
 <template>
   <div class="oferta-page">
-    <h1>Документы</h1>
+    <h1 style="margin-top: 70px;">Документы</h1>
     <h2 class="docs_INFO" id="oferta">Договор-оферта</h2>
     <iframe src="/api/documents/oferta" class="pdf-viewer" frameborder="0"></iframe>
 
