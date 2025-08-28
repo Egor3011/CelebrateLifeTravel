@@ -9,6 +9,14 @@
     
     <h2 class="docs_INFO" id="ip_info">Информация по ИП</h2>
     <iframe src="/api/documents/skan_ip" class="pdf-viewer" frameborder="0"></iframe>
+
+    <h2 class="docs_INFO" id="ip_info">Договор</h2>
+    <iframe src="/api/documents/dogovor" class="pdf-viewer" frameborder="0"></iframe>
+
+    <h2 class="docs_INFO" id="ip_info">Выписка из единого Федерального реестра турагентов</h2>
+    <div class="container">
+      <img src="https://clt.s3.cloud.ru/photos/ALL/tour_docs" style="width: 100%; height: auto;">
+    </div>
   </div>
 </template>
 
