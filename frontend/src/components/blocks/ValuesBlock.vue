@@ -10,6 +10,17 @@
         <h3>{{ card.title }}</h3>
         <p>{{ card.description }}</p>
       </div>
+      <div class="value-card">
+        <h3>Живые отзывы</h3>
+        <p>За 4 года работы у нас накопилось сотни живых отзывов от наших путешественников!</p>
+        <p>Все отзывы о нашей работе вы можете посмотреть на следующих источниках:</p>
+        <div style="display: flex; justify-content: space-between;">
+          <a href="https://instagram.com/kate_cl_travel?igshid=YmMyMTA2M2Y=">Instagram</a>
+          <a href="https://vk.com/celebratelifetravel">Vkontakte</a>
+          <a href="https://youtravel.me/expert/73923/%D0%B5%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B0">You travel me</a>
+      
+        </div>
+      </div>
     </div>
 
     <button class="cta-button" @click="scrolToTours">Выбрать путешествие</button>
@@ -29,6 +40,11 @@ const props = defineProps({
     required: true,
   },
 });
+
+const a = {
+    title: 'Сопровождение и поддержка',
+    description: 'Мы проконсультируем и поможем вам в по любым вопросам: расскажем подробно про тур и его особенности, пришлем памятку по сборам, поможем выбрать оптимальный билет из вашего города, пришлем нашу подборку проверенных отелей, если вы решите прилететь до начала тура или остаться после.',
+  }
 
 const scrolToTours = () => {
     const el = document.getElementById("katalog");
@@ -143,6 +159,10 @@ h2 {
   font-size: 0.95em;
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.8);
+}
+
+.value-card a {
+  color: #0073FF;
 }
 
 .cta-button { /* Orange color from image */
