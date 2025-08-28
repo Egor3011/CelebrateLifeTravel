@@ -1,7 +1,7 @@
 <template>
   <div class="hero-tour-block">
     <div class="content">
-      <img src="/public/celebrate_life_travel.svg" alt="Celebrate Life Travel Logo" class="logo" />
+      <img src="https://clt.s3.cloud.ru/photos/ALL/katya_mainPage" alt="Celebrate Life Travel Logo" class="logo" />
       <h1>АВТОРСКИЕ ТУРЫ</h1>
       <p>Туры, после которых хочется путешествовать каждый день</p>
       <button class="book-tour-button" @click="scrolToForm">Забронировать тур</button>
