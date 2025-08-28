@@ -6,3 +6,10 @@ mySQL_PORT = 3306
 mySQL_USERNAME = "admin_lh"
 mySQL_PASSWORD = "clt1234"
 mySQL_database = "cardInfo"
+
+TOURS = [
+    "Алтай",
+    "Осетия + Ингушетия",
+    "Дагестан 5 дней",
+    "Душевный Дагестан",
+]

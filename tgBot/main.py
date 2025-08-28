@@ -55,6 +55,10 @@ def ask_tour_name(message):
         bot.register_next_step_handler(message, ask_tour_name)
         return
 
+
+    markupTour = types.ReplyKeyboardMarkup() # Replace with actual manager username
+    for i in cfg.TOURS:
+        markupTour.add(types.KeyboardButton("Связаться с менеджером"))
     bot.send_message(message.chat.id, "И последнее: как называется тур, который тебя интересует?")
     bot.register_next_step_handler(message, show_contact_button)
 
