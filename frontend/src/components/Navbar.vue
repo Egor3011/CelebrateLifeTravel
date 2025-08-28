@@ -77,7 +77,7 @@ watch(isMenuOpen, (newValue) => {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   z-index: 1000;
   border-radius: 50px;
-  margin: 10px auto;
+  margin: 20px auto;
   max-width: calc(100% - 80px); /* This will constrain width and allow auto margins to center */
 }
 
@@ -222,7 +222,7 @@ watch(isMenuOpen, (newValue) => {
   list-style: none;
   padding: 0;
   margin: 0 0 30px 0;
-  text-align: center;
+  text-align: start;
 }
 
 .mobile-navbar-links li {

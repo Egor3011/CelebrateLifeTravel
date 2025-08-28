@@ -16,7 +16,6 @@
         
             <swiper-slide v-for="el in props.photos" >
                 <img :src="el" style="width: 100%; height: auto; border-radius: 30px;">
-                <p>{{ el }}</p>
             </swiper-slide>
         </swiper>
     </div>

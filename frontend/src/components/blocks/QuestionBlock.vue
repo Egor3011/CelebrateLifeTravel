@@ -23,7 +23,7 @@
         </form>
       </div>
       <div class="image-section">
-        <img src="/public/bgStart_11.png" alt="Landscape with person in national attire" />
+        <img src="https://clt.s3.cloud.ru/photos/perezaGruzia/8" alt="Landscape with person in national attire" />
       </div>
     </div>
   </div>
@@ -63,7 +63,7 @@ const addNemUserTG = () => {
 
 <style scoped>
 .question-block-container {
-  background-image: url('/public/bgStart.png'); /* Use your desired background image */
+  background-image: url('https://clt.s3.cloud.ru/photos/perezaGruzia/4'); /* Use your desired background image */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;

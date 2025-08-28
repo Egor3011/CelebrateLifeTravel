@@ -67,7 +67,7 @@ onMounted(() => {
 
 <style scoped>
 .values-block-container {
-  background-image: url('/public/bgStart.png'); /* Assuming a similar background as the form block */
+  background-image: url('https://clt.s3.cloud.ru/photos/osetia_ingushetia/1');/* Assuming a similar background as the form block */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -76,6 +76,12 @@ onMounted(() => {
   flex-direction: column;
   align-items: center;
   color: var(--vt-text2-color); /* White text on dark background */
+}
+
+@media(max-width: 768px) {
+  .values-block-container {
+    background-image: url("https://clt.s3.cloud.ru/photos/baical/12");
+  }
 }
 
 .header-section {
