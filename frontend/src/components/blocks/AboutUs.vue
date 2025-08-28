@@ -8,7 +8,7 @@
             <h2>Организатор туров</h2>
         </div>
         <div class="aboutMe__aboutUs">
-            <img src="https://clt.s3.cloud.ru/photos/ALL/aboutMe">
+            <img src="https://clt.s3.cloud.ru/photos/ALL/organizator">
             <div style="display: block;">
                 <p class="pText">Давай знакомится, меня зовут Екатерина Силищева, я организатор туров и основатель Celebrate Life Travel.</p>
                 <p class="pText">Я путешественник с большим стажем и посетила более 30 стран. Живу в Москве, но бОльшую часть времени провожу в своих турах и путешествиях.</p>
@@ -85,7 +85,7 @@ onMounted(() => {
     display: flex;
     img {
         margin-right: 40px;
-        width: 50%; 
+        width: 35%; 
         height: auto;
         border-radius: 20px;
     }
@@ -93,7 +93,7 @@ onMounted(() => {
 }
 
 .pText {
-    width: calc(50% - 40px);
+    width: auto;
 }
 
 @media(max-width: 1024px) {
@@ -103,7 +103,8 @@ onMounted(() => {
         img {
             margin-bottom: 40px;
             margin-right: 0;
-            width: 100%; 
+            width: 100%;
+            height: auto;
         }
     }
 }
