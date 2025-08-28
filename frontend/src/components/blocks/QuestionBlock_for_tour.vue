@@ -218,8 +218,8 @@ const openUrl = (url) => {
 
 @media(max-width: 1024px) {
   .checkbox-container input[type="checkbox"] {
-    min-width: 10px;
-    min-height: 10px;
+    width: 10px;
+    height: 10px;
   }
 }
 

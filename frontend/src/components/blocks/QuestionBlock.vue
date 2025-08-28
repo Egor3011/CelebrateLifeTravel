@@ -203,6 +203,13 @@ const addNemUserTG = () => {
   }
 }
 
+@media(max-width: 1024px) {
+  .checkbox-container input[type="checkbox"] {
+    width: 10px;
+    height: 10px;
+  }
+}
+
 .question-block {
     color: #FFFFFF;
 }
