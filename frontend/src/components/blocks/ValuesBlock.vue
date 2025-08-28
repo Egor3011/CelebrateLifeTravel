@@ -81,6 +81,10 @@ onMounted(() => {
 @media(max-width: 768px) {
   .values-block-container {
     background-image: url("https://clt.s3.cloud.ru/photos/baical/12");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;flex-direction: column;
+    align-items: center;
   }
 }
 
