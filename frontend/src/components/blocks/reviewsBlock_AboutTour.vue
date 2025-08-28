@@ -18,7 +18,7 @@
                 <img :src="el" style="width: 100%; height: auto;">
             </swiper-slide>
         </swiper>
-        <div style="text-align: center;">
+        <div style="text-align: center; margin-bottom: 30px;">
             <button @click="openReviews">Больше отзывов</button>
         </div>
     </div>
