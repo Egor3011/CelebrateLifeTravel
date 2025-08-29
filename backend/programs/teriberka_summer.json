@@ -116,9 +116,5 @@
             }
         ]
     },
-    "reviews": [
-        "https://clt.s3.cloud.ru/reviews/teriberka/1",
-        "https://clt.s3.cloud.ru/reviews/teriberka/2"
-    ],
     "price": "79.000"
 }
