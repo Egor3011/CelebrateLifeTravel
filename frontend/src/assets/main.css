@@ -38,6 +38,10 @@ button {
   transition: 0.3s;
 }
 
+a {
+  cursor: pointer;
+}
+
 button:hover {
   transform: translate(0, -4px);
   box-shadow: 0px 0px 8px var(--vt-shadow-color);
