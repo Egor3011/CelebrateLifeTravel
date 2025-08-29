@@ -145,7 +145,7 @@ p {
   }
 
   .content {
-    top: 90px;
+    top: 30%;
   }
 
   h1 {
