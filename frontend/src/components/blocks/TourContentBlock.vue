@@ -49,13 +49,13 @@ export default {
 }
 
 .content-card {
-  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background for the card */
-  border: 1px solid rgba(255, 255, 255, 0.3); /* Light border */
+  background-color: rgba(0, 0, 0, 0.1); /* Semi-transparent white background for the card */
+  border: 2px solid #FFFFFF; /* Light border */
   border-radius: 20px;
   padding: 40px 20px;
   max-width: 700px;
   margin: 0 auto;
-  backdrop-filter: blur(5px); /* Optional: for frosted glass effect */
+  backdrop-filter: blur(10px); /* Optional: for frosted glass effect */
 }
 
 .content-card ul {
