@@ -31,9 +31,9 @@
       
       <div class="footer-section navigation">
         <h3>Контакты</h3>
-        <p>Почта: <a href="">silisheva92@mail.ru</a></p>
-        <p>Менеджер: <a href="">+7 964 727-28-70</a></p>
-        <p>Директор: <a href="">+7 981 698-99-74</a></p>
+        <p>Почта: <a href="mailto:silisheva92@mail.ru">silisheva92@mail.ru</a></p>
+        <p>Менеджер: <a href="tel:79647272870">+7 964 727-28-70</a></p>
+        <p>Директор: <a href="tel:79816989974">+7 981 698-99-74</a></p>
       </div>
 
       <div class="footer-section legal-info">
