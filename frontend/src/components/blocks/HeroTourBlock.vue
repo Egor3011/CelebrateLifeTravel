@@ -140,7 +140,7 @@ p {
 
 @media (max-width: 768px) {
   .hero-tour-block {
-    height: 80vh; /* Adjust height for smaller mobile screens */
+    height: 100vh; /* Adjust height for smaller mobile screens */
   }
 
   h1 {
