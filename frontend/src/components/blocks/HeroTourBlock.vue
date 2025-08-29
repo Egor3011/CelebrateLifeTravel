@@ -98,7 +98,7 @@ p {
 
   .content {
     position: relative; /* Override absolute for desktop */
-    top: auto;
+    top: 15%;
     left: auto;
     transform: none;
     max-width: 500px; /* Adjust max-width for desktop content */
