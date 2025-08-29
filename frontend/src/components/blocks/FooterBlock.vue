@@ -33,7 +33,14 @@
         <h3>Контакты</h3>
         <p>Почта: <a href="mailto:silisheva92@mail.ru">silisheva92@mail.ru</a></p>
         <p>Менеджер: <a href="tel:79647272870">+7 964 727-28-70</a></p>
+        <ul>
+          <li><a href="https://wa.me/79647272870" class="link_blue">WhatsApp</a></li>
+        </ul>
         <p>Директор: <a href="tel:79816989974">+7 981 698-99-74</a></p>
+        <ul>
+          <li><a href="https://wa.me/79816989974" class="link_blue">WhatsApp</a></li>
+          <li><a href="https://t.me/+79816989974" class="link_blue">Telegram</a></li>
+        </ul>
       </div>
 
       <div class="footer-section legal-info">
