@@ -30,7 +30,7 @@
       <li><a href="#katalog" @click="closeMenu">Каталог туров</a></li>
       <li><a href="#plus" @click="closeMenu">Преимущества</a></li>
       <li><a href="#reviews" @click="closeMenu">Отзывы</a></li>
-      <li><RouterLink to="/documents" @click="closeMenu">Юрридическая информация</RouterLink></li>
+      <li><RouterLink to="/documents" @click="closeMenu">Юридическая информация</RouterLink></li>
     </ul>
     <button class="request-button mobile-request-button" @click="closeMenu">Оставить заявку</button>
   </div>

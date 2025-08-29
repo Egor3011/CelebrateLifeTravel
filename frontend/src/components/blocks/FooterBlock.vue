@@ -37,6 +37,7 @@
       </div>
 
       <div class="footer-section legal-info">
+        <h3>Юридическая информация</h3>
         <p>ИП Силищева Е.Д.</p>
         <p>ИНН: 741709868650</p>
         <p>ОГРНИП: 321508100199293</p>
@@ -50,6 +51,8 @@
           <li><a href="/documents#ip_info" class="link_blue">Данные ИП</a></li>
           <li><a href="/documents#politika_konf" class="link_blue">Политика конфиденциальности</a></li>
           <li><a href="/documents#oferta" class="link_blue">Договор-оферта</a></li>
+          <li><a href="/documents#dogovor" class="link_blue">Договор</a></li>
+          <li><a href="/documents#efrt" class="link_blue">Выписка из ЕФРТ</a></li>
         </ul>
       </div>
     </div>
