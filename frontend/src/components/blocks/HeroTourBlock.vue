@@ -98,7 +98,7 @@ p {
 
   .content {
     position: relative; /* Override absolute for desktop */
-    top: 15%;
+    top: auto;
     left: auto;
     transform: none;
     max-width: 500px; /* Adjust max-width for desktop content */
@@ -142,6 +142,10 @@ p {
   .hero-tour-block {
     height: 100vh; /* Adjust height for smaller mobile screens */
     background-image: url('https://clt.s3.cloud.ru/photos/ALL/mainPage_phone');
+  }
+
+  .content {
+    top: 90px;
   }
 
   h1 {
