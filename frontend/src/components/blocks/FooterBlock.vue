@@ -4,16 +4,36 @@
         <h1 style="color: var(--vt-second-color);">CELEBRATE LIFE TRAVEL</h1>
     </div>
     <div class="footer-content">
-      
-      <div class="footer-section navigation" v-show="false">
-        <h3>Навигация</h3>
+
+      <div class="footer-section navigation">
+        <h3>Соц сети</h3>
         <ul>
-          <li><a href="#hero">Главная</a></li>
-          <li><a href="#about">О нас</a></li>
-          <li><a href="#tours">Туры</a></li>
-          <li><a href="#faq">FAQ</a></li>
-          <li><a href="#contact">Контакты</a></li>
+          <li>
+            <a href="https://instagram.com/kate_cl_travel?igshid=YmMyMTA2M2Y=" class="links_sites">
+              <img src="/public/icons/instagram.png" alt="">
+              <h3 style="color: #0073FF;">Instagram</h3>
+            </a>
+          </li>
+          <li>
+            <a href="https://t.me/celebrate_life_travel" class="links_sites">
+              <img src="/public/icons/tg.png" alt="">
+              <h3 style="color: #0073FF;">Telegram</h3>
+            </a>
+          </li>
+          <li>
+            <a href="https://vk.com/celebratelifetravel" class="links_sites">
+              <img src="/public/icons/vk.png" alt="">
+              <h3 style="color: #0073FF;">VK</h3>
+            </a>
+          </li>
         </ul>
+      </div>
+      
+      <div class="footer-section navigation">
+        <h3>Контакты</h3>
+        <p>Почта: <a href="">silisheva92@mail.ru</a></p>
+        <p>Менеджер: <a href="">+7 964 727-28-70</a></p>
+        <p>Директор: <a href="">+7 981 698-99-74</a></p>
       </div>
 
       <div class="footer-section legal-info">
@@ -120,5 +140,16 @@
   .footer-section {
     text-align: center;
   }
+}
+
+.links_sites {
+  display: flex;
+  align-items: center;
+}
+
+.links_sites img {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
 }
 </style>
