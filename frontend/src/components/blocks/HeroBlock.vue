@@ -140,6 +140,8 @@ export default {
 @media(max-width: 1024px) {
   .hero-block {
     text-align: center;
+    max-width: 100vw;
+    overflow: hidden;
   }
 
   .content {
