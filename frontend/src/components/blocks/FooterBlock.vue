@@ -57,8 +57,8 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2023 Ваш сайт. Все права защищены.</p>
-      <p style="opacity: 0.5">* Instagram — принадлежит компании Meta, запрещённой на территории РФ</p>
+      <p style="opacity: 0.5; font-size: 14px;">* Instagram — принадлежит компании Meta, запрещённой на территории РФ</p>
+      <a href="https://t.me/aksenovegor_web" style="color: var(--vt-text-h-color); font-size: 14px;">Заказать сайт</a>
     </div>
   </footer>
 </template>
