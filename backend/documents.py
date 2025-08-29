@@ -11,7 +11,7 @@ documents = APIRouter(
 
 @documents.get("/oferta")
 async def get_oferta_pdf():
-    file_path = "./documents/oferta.pdf"
+    file_path = "./documents/ofertaFull.pdf"
     if not os.path.exists(file_path):
         raise fastapi.HTTPException(status_code=404, detail="Oferta PDF not found")
     return FileResponse(file_path, media_type="application/pdf")
