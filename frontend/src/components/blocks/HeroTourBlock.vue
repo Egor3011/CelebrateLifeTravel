@@ -141,6 +141,7 @@ p {
 @media (max-width: 768px) {
   .hero-tour-block {
     height: 100vh; /* Adjust height for smaller mobile screens */
+    background-image: url('https://clt.s3.cloud.ru/photos/ALL/mainPage_phone');
   }
 
   h1 {
