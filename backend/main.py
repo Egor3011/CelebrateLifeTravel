@@ -40,7 +40,7 @@ def get_user(id: str):
 
 
 @app.get("/get_white_id")
-def get_user(id: str):
+def get_user():
     l += 1
     return str(l)
 

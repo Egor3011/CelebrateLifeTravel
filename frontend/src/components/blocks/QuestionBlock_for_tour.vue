@@ -45,11 +45,12 @@ const tour = ref('');
 const phone = ref('');
 const consent = ref(false);
 
-const id = ref("")
+const id = ref('')
 
 onMounted(() => {
   axios.get("/api/get_white_id").then((res) => {
     id.value = res.data
+    alert(id.value)
   })
   tour.value = props.title
 });
