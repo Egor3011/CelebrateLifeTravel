@@ -41,6 +41,7 @@ def get_user(id: str):
 
 @app.get("/get_white_id")
 def get_user():
+    global lenght_forms
     lenght_forms = lenght_forms + 1
     return str(lenght_forms)
 
