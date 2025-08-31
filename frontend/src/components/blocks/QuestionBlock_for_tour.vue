@@ -64,7 +64,7 @@ const addNemUserTG = () => {
           "name": name.value,
           "phone": phone.value,
           "tour": tour.value
-        }).then((res) => {
+        }).then(() => {
             openUrl()
         }).catch(error => {
             alert(error)
