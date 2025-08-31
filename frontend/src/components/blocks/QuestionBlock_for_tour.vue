@@ -64,12 +64,11 @@ const addNemUserTG = () => {
           "name": name.value,
           "phone": phone.value,
           "tour": tour.value
-        }).then(() => {
-            openUrl()
         }).catch(error => {
             alert(error)
         })
         alert(name.value + phone.value + tour.value)
+        openUrl()
     }
     else {
         alert('Пожалуйста, дайте согласие на обработку персональных данных.');
