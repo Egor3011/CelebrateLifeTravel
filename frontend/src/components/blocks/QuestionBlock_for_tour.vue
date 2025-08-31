@@ -50,7 +50,6 @@ const id = ref('')
 onMounted(() => {
   axios.get("/api/get_white_id").then((res) => {
     id.value = res.data
-    alert(id.value)
   })
   tour.value = props.title
 });
@@ -67,7 +66,6 @@ const addNemUserTG = () => {
         }).catch(error => {
             alert(error)
         })
-        alert(name.value + phone.value + tour.value)
         openUrl()
     }
     else {
