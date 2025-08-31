@@ -3,7 +3,7 @@
         <div class="titleBlockDiv__aboutUs">
             <span class="headH1 komand--AboutUs">Команда</span>
             <div style="height: 5px;"></div>
-            <h2 class="titleBlock">CELEBRATE LIFE TRAVEL  – это двигатель ваших приключений</h2>
+            <h2 class="titleBlock">CELEBRATE LIFE TRAVEL- это команда профессионалов, которые сделают ваше путешествие незабываемым</h2>
         </div>
         <div style="text-align: center;">
             <h2>Организатор туров</h2>

@@ -6,7 +6,7 @@
     <div class="footer-content">
 
       <div class="footer-section navigation">
-        <h3>Соц сети</h3>
+        <h3>Мы в социальных сетях</h3>
         <ul>
           <li>
             <a href="https://instagram.com/kate_cl_travel?igshid=YmMyMTA2M2Y=" class="links_sites">

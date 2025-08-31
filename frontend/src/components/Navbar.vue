@@ -2,8 +2,8 @@
   <nav class="navbar container">
     <div class="navbar-brand">
       <RouterLink to="/" class="brand-link">
-        <span class="brand-name">CELEBRATE</span>
-        <span class="brand-travel">LIFE TRAVEL</span>
+        <span class="brand-name">CELEBRATE LIFE</span>
+        <span class="brand-travel">TRAVEL</span>
       </RouterLink>
     </div>
 
@@ -124,7 +124,6 @@ watch(isMenuOpen, (newValue) => {
 .brand-name {
   font-family: 'Unbounded-Bold';
   font-size: 1.2em;
-  text-decoration: underline;
 }
 
 .brand-travel {
