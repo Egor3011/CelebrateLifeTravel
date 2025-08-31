@@ -42,7 +42,7 @@ def get_user(id: str):
 @app.get("/get_white_id")
 def get_user(id: str):
     l += 1
-    return l
+    return str(l)
 
 
 @app.get("/reviews/{tour}")
