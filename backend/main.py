@@ -13,7 +13,7 @@ app = fastapi.FastAPI()
 app.include_router(documents)
 
 forms = {}
-l = 0
+lenght_forms = 0
 
 class UserFormInfo(BaseModel):
     id: str
@@ -30,7 +30,7 @@ def startMes():
 @app.post("/newUserDt")
 def newUserDt(info: UserFormInfo):
     print(info)
-    forms[info.phone] = info
+    forms[info.id] = info
     return {"Status": "good"}
 
 
@@ -41,8 +41,8 @@ def get_user(id: str):
 
 @app.get("/get_white_id")
 def get_user():
-    l += 1
-    return str(l)
+    lenght_forms = lenght_forms + 1
+    return str(lenght_forms)
 
 
 @app.get("/reviews/{tour}")
