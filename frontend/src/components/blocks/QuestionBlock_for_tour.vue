@@ -7,7 +7,7 @@
           Заполните форму, и наш администратор в скором
           времени свяжется с вами
         </p>
-        <form @submit.prevent="addNemUserTG">
+        <form>
           <input type="text" v-model="name" placeholder="Ваше имя" class="input-field" />
           <input type="tel" v-model="phone" placeholder="+7 (999)-99-99" class="input-field" />
           <input type="text" v-model="tour" placeholder="Название тура" class="input-field" />
@@ -19,7 +19,7 @@
               с Политикой конфиденциальности
             </label>
           </div>
-          <button type="submit" class="submit-button">Оставить заявку</button>
+          <button type="submit" class="submit-button" @click="addNemUserTG">Оставить заявку</button>
         </form>
       </div>
       <div class="image-section">
@@ -44,7 +44,12 @@ const tour = ref('');
 const phone = ref('');
 const consent = ref(false);
 
+const id = ref("")
+
 onMounted(() => {
+  axios.get("/api/get_white_id").then((res) => {
+    id.value = res.data
+  })
   tour.value = props.title
 });
 
@@ -57,7 +62,7 @@ const addNemUserTG = () => {
             "phone": phone.value,
             "tour": tour.value
         }).then((res) => {
-            openUrl("https://t.me/celebratelifetravel_bot?start=id_" + res.data.ID)
+            openUrl()
         }).catch(error => {
             alert(error)
         })
@@ -69,8 +74,8 @@ const addNemUserTG = () => {
 }
 
 
-const openUrl = (url) => {
-  window.open(url, '_blank')
+const openUrl = () => {
+  window.open("https://t.me/celebratelifetravel_bot?start=id_" + id.value, '_blank')
 }
 </script>
 

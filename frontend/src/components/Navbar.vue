@@ -129,13 +129,11 @@ watch(isMenuOpen, (newValue) => {
 .brand-travel {
   font-family: 'Montserrat';
   font-size: 0.8em;
-  text-decoration: underline;
 }
 
 .brand-link:hover .brand-name,
 .brand-link:hover .brand-travel {
   color: var(--vt-second-color);
-  text-decoration: underline;
   transition: 0.3s;
 }
 
