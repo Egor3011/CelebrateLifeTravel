@@ -116,7 +116,7 @@ const props = defineProps({
   }
 
   .text-content h3 {
-    font-size: 1.3em;
+    font-size: 0.9em;
   }
 
   .text-content li {
