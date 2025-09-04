@@ -14,6 +14,11 @@
       :price="tourInfo.price" 
     />
 
+    <AccordionBlock
+      :infoG="tourInfo.goodInfo"
+      :infoB="tourInfo.badInfo"
+    />
+
     <div class="container">
       <div class="line"></div>
     </div>
@@ -21,6 +26,7 @@
     <TourDatesBlock 
       :tourDates="tourInfo.tourDatesData" 
     />
+
     <photosInTour
       :photos="tourInfo.photosInTour"
     />
@@ -40,6 +46,8 @@
 </template>
 
 <script setup>
+import AccordionBlock from '@/components/blocks/AccordionBlock.vue';
+
 import HeroBlock from '../components/blocks/HeroBlock.vue';
 import TourContentBlock from '../components/blocks/TourContentBlock.vue';
 import TourProgramBlock from '../components/blocks/TourProgramBlock.vue';
