@@ -30,7 +30,7 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { onMounted, ref } from 'vue';
 import axios from 'axios';
 
 const name = ref('');
@@ -38,26 +38,37 @@ const tour = ref('-');
 const phone = ref('');
 const consent = ref(false);
 
+const id = ref('')
+
+onMounted(() => {
+  axios.get("/api/get_white_id").then((res) => {
+    id.value = res.data
+    alert(id.value)
+  })
+});
+
+
 
 const addNemUserTG = () => {
     if(consent.value) {
         axios.post("/api/newUserDt", {
-            "name": name.value,
-            "phone": phone.value,
-            "tour": tour.value
-        }).then((res) => {
-            console.log(res.data)
-            const urlTo_TG = "https://t.me/celebratelifetravel_bot?start=id_" + phone.value
-            window.open(urlTo_TG, '_blank')
+          "id": id.value,
+          "name": name.value,
+          "phone": phone.value,
+          "tour": tour.value
         }).catch(error => {
             alert(error)
         })
-        alert(name.value + phone.value + tour.value)
+        openUrl()
     }
     else {
         alert('Пожалуйста, дайте согласие на обработку персональных данных.');
     }
-    
+}
+
+
+const openUrl = () => {
+  window.open("https://t.me/celebratelifetravel_bot?start=id_" + id.value, '_blank')
 }
 </script>
 

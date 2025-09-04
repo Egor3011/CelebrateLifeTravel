@@ -7,7 +7,6 @@
           Заполните форму, и наш администратор в скором
           времени свяжется с вами
         </p>
-        <p>{{ id }}</p>
         <form>
           <input type="text" v-model="name" placeholder="Ваше имя" class="input-field" />
           <input type="tel" v-model="phone" placeholder="+7 (999)-99-99" class="input-field" />
