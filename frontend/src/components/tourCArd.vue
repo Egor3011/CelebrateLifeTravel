@@ -10,6 +10,10 @@ const props = defineProps({
 const urlOnClick = (url) => {
     window.open("/tours?tour=" + url)
 }
+
+const openUrlTG = () => {
+  window.open("https://t.me/celebratelifetravel_bot?start", '_blank')
+}
 </script>
 
 
@@ -19,6 +23,7 @@ const urlOnClick = (url) => {
         <h3>{{ props.title }}</h3>
         <p class="textP__tourCard">{{props.info}}</p>
         <button @click="urlOnClick(props.link)">Подробнее</button>
+        <button @click="openUrlTG">Забронировать</button>
     </div>
 </template>
 
