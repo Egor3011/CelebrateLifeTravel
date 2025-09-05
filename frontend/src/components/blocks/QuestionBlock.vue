@@ -3,10 +3,10 @@
     <div class="question-block">
       <div class="content-section">
         <h2 style="margin-top: 0;">ОСТАЛИСЬ ВОПРОСЫ?</h2>
-        <form v-show="false">
-          <button type="submit" class="submit-button" @click="openUrl">Оставить заявку</button>
+        <form>
+          <button type="submit" class="submit-button" @click="openUrl">Напиши менеджеру в WhatsApp</button>
         </form>
-        <a href="https://wa.me/79647272870" class="link_blue">Напиши менеджеру в WhatsApp</a>
+        <a v-show="false" href="https://wa.me/79647272870" class="link_blue">Напиши менеджеру в WhatsApp</a>
       </div>
       <div class="image-section">
         <img src="https://clt.s3.cloud.ru/photos/perezaGruzia/8" alt="Landscape with person in national attire" />
@@ -19,7 +19,7 @@
 
 
 const openUrl = () => {
-  window.open("https://t.me/celebratelifetravel_bot?start", '_blank')
+  window.open("https://wa.me/79647272870", '_blank')
 }
 </script>
 
