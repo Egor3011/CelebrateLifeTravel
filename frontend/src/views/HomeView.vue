@@ -25,6 +25,8 @@ const openUrl = () => {
       const hashNew = hash.slice(1)
       const el = document.getElementById(hashNew);
       el.scrollIntoView();
+      el.scrollIntoView();
+      el.scrollIntoView();
     }
 }
 
