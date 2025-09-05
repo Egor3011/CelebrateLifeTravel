@@ -63,35 +63,15 @@
     "tourDatesData": {
         "Сентябрь": [
             {
-                "range": "16-22",
+                "range": "1-7",
                 "unavailable": false
             },
-            {
-                "range": "2-8",
-                "unavailable": false
-            },
-            {
-                "range": "22-28",
-                "unavailable": false
-            }
-        ],
-        "Октябрь": [
             {
                 "range": "8-14",
                 "unavailable": false
             },
             {
-                "range": "24-30",
-                "unavailable": false
-            }
-        ],
-        "Ноябрь": [
-            {
-                "range": "10-16",
-                "unavailable": false
-            },
-            {
-                "range": "14-20",
+                "range": "22-28",
                 "unavailable": false
             }
         ]
