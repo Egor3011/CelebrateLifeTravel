@@ -8,11 +8,11 @@
     </div>
 
     <ul class="navbar-links">
-      <li><a href="#about">О нас</a></li>
-      <li><a href="#katalog">Каталог туров</a></li>
-      <li><a href="#plus">Преимущества</a></li>
-      <li><a href="#reviews">Отзывы</a></li>
-      <li><a href="#footerBlock">Контакты</a></li>
+      <li><a href="https://celebratelifetravel.ru/#about">О нас</a></li>
+      <li><a href="https://celebratelifetravel.ru/#katalog">Каталог туров</a></li>
+      <li><a href="https://celebratelifetravel.ru/#plus">Преимущества</a></li>
+      <li><a href="https://celebratelifetravel.ru/#reviews">Отзывы</a></li>
+      <li><a href="https://celebratelifetravel.ru/#footerBlock">Контакты</a></li>
     </ul>
 
     <div class="navbar-actions">
@@ -27,11 +27,11 @@
   <div class="mobile-menu" :class="{ 'is-open': isMenuOpen }">
     <ul class="mobile-navbar-links">
       <li><RouterLink to="/" @click="closeMenu">Главная</RouterLink></li>
-      <li><a href="#about" @click="closeMenu">О нас</a></li>
-      <li><a href="#katalog" @click="closeMenu">Каталог туров</a></li>
-      <li><a href="#plus" @click="closeMenu">Преимущества</a></li>
-      <li><a href="#reviews" @click="closeMenu">Отзывы</a></li>
-      <li><a href="#footerBlock" @click="closeMenu">Контакты</a></li>
+      <li><a href="https://celebratelifetravel.ru/#about" @click="closeMenu">О нас</a></li>
+      <li><a href="https://celebratelifetravel.ru/#katalog" @click="closeMenu">Каталог туров</a></li>
+      <li><a href="https://celebratelifetravel.ru/#plus" @click="closeMenu">Преимущества</a></li>
+      <li><a href="https://celebratelifetravel.ru/#reviews" @click="closeMenu">Отзывы</a></li>
+      <li><a href="https://celebratelifetravel.ru/#footerBlock" @click="closeMenu">Контакты</a></li>
       <li><RouterLink to="/documents" @click="closeMenu">Юридическая информация</RouterLink></li>
     </ul>
     <button class="request-button mobile-request-button" @click="openUrlTG">Оставить заявку</button>

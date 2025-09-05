@@ -13,6 +13,23 @@ import HeroTourBlock from '@/components/blocks/HeroTourBlock.vue';
 import TeamCard from '@/components/blocks/TeamCard.vue';
 import preimushestva from '@/components/blocks/preimushestva.vue';
 
+import { onMounted, watch } from 'vue';
+
+onMounted(() => {
+    openUrl()
+})
+
+const openUrl = () => {
+    let hash = window.location.hash
+    if(hash) {
+      const hashNew = hash.slice(1)
+      alert(hashNew)
+      const el = document.getElementById(hashNew);
+      el.scrollIntoView({behavior: "smooth"});
+    }
+}
+
+
 const valuesCards = [
   {
     title: 'Комфорт',
