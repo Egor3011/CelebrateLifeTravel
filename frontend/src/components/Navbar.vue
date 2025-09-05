@@ -64,6 +64,12 @@ const topGo = () => {
   }
 }
 
+const goToPunkt = (id, page) => {
+  window.open("https://celebratelifetravel.ru" + page, "")
+  const el = document.getElementById("heroBlock_Home");
+  el.scrollIntoView({behavior: "smooth"});
+}
+
 const openUrlTG = () => {
   window.open("https://t.me/celebratelifetravel_bot?start", '_blank')
 }
