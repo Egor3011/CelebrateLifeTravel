@@ -3,9 +3,7 @@
     <div class="question-block">
       <div class="content-section">
         <h2 style="margin-top: 0;">ОСТАЛИСЬ ВОПРОСЫ?</h2>
-        <form @submit.prevent="openUrl">
-          <button type="submit" class="submit-button">Оставить заявку</button>
-        </form>
+        <button type="submit" class="submit-button" @click="openUrl">Оставить заявку</button>
       </div>
       <div class="image-section">
         <img src="https://clt.s3.cloud.ru/photos/perezaGruzia/8" alt="Landscape with person in national attire" />
