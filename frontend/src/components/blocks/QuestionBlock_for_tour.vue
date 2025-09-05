@@ -8,18 +8,7 @@
           времени свяжется с вами
         </p>
         <form>
-          <input type="text" v-model="name" placeholder="Ваше имя" class="input-field" />
-          <input type="tel" v-model="phone" placeholder="+7 (999)-99-99" class="input-field" />
-          <input type="text" v-model="tour" placeholder="Название тура" class="input-field" />
-          <div class="checkbox-container">
-            <input type="checkbox" id="consent" v-model="consent" />
-            <label for="consent">
-              Я предоставляю согласие на обработку персональных
-              данных,а также подтверждаю ознакомление и согласие
-              с Политикой конфиденциальности
-            </label>
-          </div>
-          <button type="submit" class="submit-button" @click="addNemUserTG">Оставить заявку</button>
+          <button type="submit" class="submit-button" @click="openUrl">Оставить заявку</button>
         </form>
       </div>
       <div class="image-section">
@@ -39,40 +28,9 @@ const props = defineProps({
   },
 });
 
-const name = ref('');
-const tour = ref('');
-const phone = ref('');
-const consent = ref(false);
-
-const id = ref('')
-
-onMounted(() => {
-  axios.get("/api/get_white_id").then((res) => {
-    id.value = res.data
-  })
-  tour.value = props.title
-});
-
-
-
-const addNemUserTG = () => {
-    if(consent.value) {
-        axios.post("/api/newUserDt", {
-          "id": id.value,
-          "name": name.value,
-          "phone": phone.value,
-          "tour": tour.value
-        })
-        openUrl()
-    }
-    else {
-        alert('Пожалуйста, дайте согласие на обработку персональных данных.');
-    }
-}
-
 
 const openUrl = () => {
-  window.open("https://t.me/celebratelifetravel_bot?start=id_" + id.value, '_blank')
+  window.open("https://t.me/celebratelifetravel_bot?start", '_blank')
 }
 </script>
 

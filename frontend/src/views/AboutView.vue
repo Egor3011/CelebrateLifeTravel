@@ -4,6 +4,7 @@
       :title="tourInfo.title"
       :description="tourInfo.description"
       :backgroundImage="tourInfo.backgroundImage"
+      id="heroBlock_Home"
     />
     <TourContentBlock 
       :content="tourInfo.tourContent" 

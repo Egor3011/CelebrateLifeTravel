@@ -1,10 +1,12 @@
 <template>
   <nav class="navbar container">
     <div class="navbar-brand">
-      <RouterLink to="/" class="brand-link">
-        <span class="brand-name">CELEBRATE LIFE</span>
-        <span class="brand-travel">TRAVEL</span>
-      </RouterLink>
+      <form :action="topGo()">
+        <RouterLink to="/" class="brand-link">
+          <span class="brand-name">CELEBRATE LIFE</span>
+          <span class="brand-travel">TRAVEL</span>
+        </RouterLink>
+      </form>
     </div>
 
     <ul class="navbar-links">
@@ -50,6 +52,18 @@ const scrolToForm = () => {
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value;
 };
+
+const topGo = () => {
+  const pathName = window.location.pathname
+  alert(pathName)
+  if (pathName == "/") {
+    const el = document.getElementById("heroBlock_Home");
+    el.scrollIntoView({behavior: "smooth"});
+  }
+  else {
+    window.open("https://celebratelifetravel.ru")
+  }
+}
 
 const closeMenu = () => {
   isMenuOpen.value = false;

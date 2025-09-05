@@ -3,22 +3,7 @@
     <div class="question-block">
       <div class="content-section">
         <h2 style="margin-top: 0;">ОСТАЛИСЬ ВОПРОСЫ?</h2>
-        <p>
-          Заполните форму, и наш администратор в скором
-          времени свяжется с вами, чтобы ответить на все
-          вопросы
-        </p>
-        <form @submit.prevent="addNemUserTG">
-          <input type="text" v-model="name" placeholder="Ваше имя" class="input-field" />
-          <input type="tel" v-model="phone" placeholder="+7 (999)-99-99" class="input-field" />
-          <div class="checkbox-container">
-            <input type="checkbox" id="consent" v-model="consent" />
-            <label for="consent">
-              Я предоставляю согласие на обработку персональных
-              данных,а также подтверждаю ознакомление и согласие
-              с Политикой конфиденциальности
-            </label>
-          </div>
+        <form @submit.prevent="openUrl">
           <button type="submit" class="submit-button">Оставить заявку</button>
         </form>
       </div>
@@ -33,39 +18,9 @@
 import { onMounted, ref } from 'vue';
 import axios from 'axios';
 
-const name = ref('');
-const tour = ref('-');
-const phone = ref('');
-const consent = ref(false);
-
-const id = ref('')
-
-onMounted(() => {
-  axios.get("/api/get_white_id").then((res) => {
-    id.value = res.data
-  })
-});
-
-
-
-const addNemUserTG = () => {
-    if(consent.value) {
-        axios.post("/api/newUserDt", {
-          "id": id.value,
-          "name": name.value,
-          "phone": phone.value,
-          "tour": tour.value
-        })
-        openUrl()
-    }
-    else {
-        alert('Пожалуйста, дайте согласие на обработку персональных данных.');
-    }
-}
-
 
 const openUrl = () => {
-  window.open("https://t.me/celebratelifetravel_bot?start=id_" + id.value, '_blank')
+  window.open("https://t.me/celebratelifetravel_bot?start" + id.value, '_blank')
 }
 </script>
 
