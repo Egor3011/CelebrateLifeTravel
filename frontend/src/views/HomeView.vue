@@ -31,7 +31,7 @@ const openUrl = () => {
         const el1 = document.getElementById(hashNew);
         el1.scrollIntoView({behavior: "smooth"});
 
-      }, 500)
+      }, 300)
 
     }
 }
