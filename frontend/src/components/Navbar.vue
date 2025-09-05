@@ -55,7 +55,6 @@ const toggleMenu = () => {
 
 const topGo = () => {
   const pathName = window.location.pathname
-  alert(pathName)
   if (pathName == "/") {
     const el = document.getElementById("heroBlock_Home");
     el.scrollIntoView({behavior: "smooth"});
