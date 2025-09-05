@@ -24,7 +24,7 @@ const openUrl = () => {
     if(hash) {
       const hashNew = hash.slice(1)
       const el = document.getElementById(hashNew);
-      el.scrollIntoView({behavior: "smooth"});
+      el.scrollIntoView();
     }
 }
 
