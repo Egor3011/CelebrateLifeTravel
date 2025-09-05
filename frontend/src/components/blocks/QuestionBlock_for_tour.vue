@@ -3,10 +3,10 @@
     <div class="question-block">
       <div class="content-section">
         <h2 style="margin-top: 0;">ОСТАВИТЬ ЗАЯВКУ</h2>
-        <form>
+        <form v-show="false">
           <button type="submit" class="submit-button" @click="openUrl">Оставить заявку</button>
         </form>
-        <a href="https://wa.me/79647272870" class="link_blue">Менеджер WhatsApp</a>
+        <a href="https://wa.me/79647272870" class="link_blue">Напиши менеджеру в WhatsApp</a>
       </div>
       <div class="image-section">
         <img src="https://clt.s3.cloud.ru/photos/perezaGruzia/8" alt="Landscape with person in national attire" />
