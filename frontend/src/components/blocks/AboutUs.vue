@@ -121,6 +121,7 @@ onMounted(() => {
     }
 }
 
+
 .pText {
     text-align: start;
     width: 100%;
