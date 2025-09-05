@@ -48,8 +48,10 @@ const openUrlTG = () => {
     font-size: 10px;
 }
 
-.learnMoreButton_1 {
+.learnMoreButton_2 {
     font-size: 10px;
+    border: 2px solid var(--vt-second-color);
+    background: none;
 }
 
 @media(max-width: 1024px) {

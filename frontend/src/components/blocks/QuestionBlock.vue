@@ -6,6 +6,7 @@
         <form>
           <button type="submit" class="submit-button" @click="openUrl">Оставить заявку</button>
         </form>
+        <a href="https://wa.me/79647272870" class="link_blue">Менеджер WhatsApp</a>
       </div>
       <div class="image-section">
         <img src="https://clt.s3.cloud.ru/photos/perezaGruzia/8" alt="Landscape with person in national attire" />
