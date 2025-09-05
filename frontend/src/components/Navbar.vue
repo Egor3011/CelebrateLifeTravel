@@ -1,11 +1,9 @@
 <template>
   <nav class="navbar container">
     <div class="navbar-brand">
-      <form :action="topGo">
-        <RouterLink to="/" class="brand-link">
-          <span class="brand-name">CELEBRATE LIFE</span>
-          <span class="brand-travel">TRAVEL</span>
-        </RouterLink>
+      <form @click="topGo" class="brand-link">
+        <span class="brand-name">CELEBRATE LIFE</span>
+        <span class="brand-travel">TRAVEL</span>
       </form>
     </div>
 

@@ -45,7 +45,7 @@ import LineRoad from '@/components/blocks/LineRoad.vue';
 
 <template>
   <main>
-    <HeroTourBlock/>
+    <HeroTourBlock id="heroBlock_Home"/>
 
     <preimushestva id="about"/>
 
