@@ -63,6 +63,7 @@ const openUrlTG = () => {
     }
     .learnMoreButton_1 {
         margin-right: 0;
+        margin-bottom: 5px;
     }
 }
 </style>
