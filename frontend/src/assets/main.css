@@ -117,3 +117,13 @@ h3 {
     font-size: 14px;
   }
 }
+
+
+.content-section {
+  text-align: center;
+  a {
+    font-size: 20px;
+    color: #FFF;
+    margin-top: 15px;
+  }
+}
