@@ -26,7 +26,10 @@ const openUrl = () => {
       const el = document.getElementById(hashNew);
       el.scrollIntoView();
       el.scrollIntoView();
-      el.scrollIntoView();
+      alert("1")
+      el.scrollIntoView({behavior: "smooth"});
+      alert("2")
+
     }
 }
 
