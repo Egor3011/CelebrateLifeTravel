@@ -28,8 +28,7 @@ export default {
   },
   methods: {
     scrolToForm() {
-        const el = document.getElementById("form");
-        el.scrollIntoView({behavior: "smooth"});
+      window.open("https://t.me/celebratelifetravel_bot?start", '_blank')
     }
   }
 };

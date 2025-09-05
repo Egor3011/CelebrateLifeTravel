@@ -1,5 +1,5 @@
 <template>
-    <div class="container aboutAllSwiper">
+    <div class="container aboutAllSwiper" style="margin-top: 40px;">
         <div class="titleBlockDiv__ABOUTUSswiper">
             <span class="headH1">О нас</span>
             <div style="height: 2px;"></div>

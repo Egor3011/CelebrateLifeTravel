@@ -3,7 +3,9 @@
     <div class="question-block">
       <div class="content-section">
         <h2 style="margin-top: 0;">ОСТАЛИСЬ ВОПРОСЫ?</h2>
-        <button type="submit" class="submit-button" @click="openUrl">Оставить заявку</button>
+        <form>
+          <button type="submit" class="submit-button" @click="openUrl">Оставить заявку</button>
+        </form>
       </div>
       <div class="image-section">
         <img src="https://clt.s3.cloud.ru/photos/perezaGruzia/8" alt="Landscape with person in national attire" />
@@ -13,12 +15,10 @@
 </template>
 
 <script setup>
-import { onMounted, ref } from 'vue';
-import axios from 'axios';
 
 
 const openUrl = () => {
-  window.open("https://t.me/celebratelifetravel_bot?start" + id.value, '_blank')
+  window.open("https://t.me/celebratelifetravel_bot?start", '_blank')
 }
 </script>
 

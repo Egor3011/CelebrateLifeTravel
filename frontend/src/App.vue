@@ -9,7 +9,7 @@ import FooterBlock from './components/blocks/FooterBlock.vue';
   <Navbar/>
   
   <RouterView />
-  <FooterBlock/>
+  <FooterBlock id="footerBlock"/>
 </template>
 
 <style scoped>

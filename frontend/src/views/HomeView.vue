@@ -47,9 +47,9 @@ import LineRoad from '@/components/blocks/LineRoad.vue';
   <main>
     <HeroTourBlock/>
 
-    <preimushestva/>
+    <preimushestva id="about"/>
 
-    <AboutUs id="about"/>
+    <AboutUs/>
 
     <tourBlock id="katalog"/>
 
@@ -61,6 +61,6 @@ import LineRoad from '@/components/blocks/LineRoad.vue';
 
     <QuestionBlock id="form"/>
 
-    <TGbot/>
+    <TGbot v-show="false"/>
   </main>
 </template>

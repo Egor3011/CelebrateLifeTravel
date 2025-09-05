@@ -14,10 +14,11 @@
       <li><a href="#katalog">Каталог туров</a></li>
       <li><a href="#plus">Преимущества</a></li>
       <li><a href="#reviews">Отзывы</a></li>
+      <li><a href="#footerBlock">Контакты</a></li>
     </ul>
 
     <div class="navbar-actions">
-      <button class="request-button" @click="scrolToForm">Оставить заявку</button>
+      <button class="request-button" @click="openUrlTG">Оставить заявку</button>
       <button class="hamburger-button" @click="toggleMenu">
         <div class="hamburger-icon"></div>
         <div class="hamburger-icon"></div>
@@ -32,9 +33,10 @@
       <li><a href="#katalog" @click="closeMenu">Каталог туров</a></li>
       <li><a href="#plus" @click="closeMenu">Преимущества</a></li>
       <li><a href="#reviews" @click="closeMenu">Отзывы</a></li>
+      <li><a href="#footerBlock" @click="closeMenu">Контакты</a></li>
       <li><RouterLink to="/documents" @click="closeMenu">Юридическая информация</RouterLink></li>
     </ul>
-    <button class="request-button mobile-request-button" @click="closeMenu">Оставить заявку</button>
+    <button class="request-button mobile-request-button" @click="openUrlTG">Оставить заявку</button>
   </div>
 </template>
 
@@ -63,6 +65,10 @@ const topGo = () => {
   else {
     window.open("https://celebratelifetravel.ru")
   }
+}
+
+const openUrlTG = () => {
+  window.open("https://t.me/celebratelifetravel_bot?start", '_blank')
 }
 
 const closeMenu = () => {

@@ -41,7 +41,7 @@
       :title="tourInfo.title"
       id="form"
     />
-    <TGbot/>
+    <TGbot v-show="false"/>
 
   </div>
 </template>
