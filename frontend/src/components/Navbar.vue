@@ -32,7 +32,6 @@
       <li><a href="https://celebratelifetravel.ru/#plus" @click="closeMenu">Преимущества</a></li>
       <li><a href="https://celebratelifetravel.ru/#reviews" @click="closeMenu">Отзывы</a></li>
       <li><a href="https://celebratelifetravel.ru/#footerBlock" @click="closeMenu">Контакты</a></li>
-      <li><RouterLink to="/documents" @click="closeMenu">Юридическая информация</RouterLink></li>
     </ul>
     <button class="request-button mobile-request-button" @click="openUrlTG">Оставить заявку</button>
   </div>
