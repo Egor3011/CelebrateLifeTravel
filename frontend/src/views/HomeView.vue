@@ -23,7 +23,6 @@ const openUrl = () => {
     let hash = window.location.hash
     if(hash) {
       const hashNew = hash.slice(1)
-      alert(hashNew)
       const el = document.getElementById(hashNew);
       el.scrollIntoView({behavior: "smooth"});
     }
