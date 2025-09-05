@@ -22,8 +22,10 @@ const openUrlTG = () => {
         <img :src="props.imgSrc" alt="" style="width: 100%; border-radius: 20px;">
         <h3>{{ props.title }}</h3>
         <p class="textP__tourCard">{{props.info}}</p>
-        <button @click="urlOnClick(props.link)">Подробнее</button>
-        <button @click="openUrlTG">Забронировать</button>
+        <div class="learnMoreButton_block">
+            <button @click="urlOnClick(props.link)" class="learnMoreButton_1">Подробнее</button>
+            <button @click="openUrlTG" class="learnMoreButton_2">Забронировать</button>
+        </div>
     </div>
 </template>
 
@@ -41,9 +43,24 @@ const openUrlTG = () => {
     font-size: 12px;
 }
 
+.learnMoreButton_1 {
+    margin-right: 5px;
+    font-size: 10px;
+}
+
+.learnMoreButton_1 {
+    font-size: 10px;
+}
+
 @media(max-width: 1024px) {
     .container__tourCard {
         padding: 10px;
+    }
+    .learnMoreButton_block {
+        text-align: center;
+    }
+    .learnMoreButton_1 {
+        margin-right: 0;
     }
 }
 </style>
