@@ -65,7 +65,7 @@
     </div>
     <div class="footer-bottom">
       <p style="opacity: 0.5; font-size: 14px;">* Instagram — принадлежит компании Meta, запрещённой на территории РФ</p>
-      <p style="opacity: 0.5; font-size: 14px;">Разработчик - @aksenovegor_web</p>
+      <p style="opacity: 0.5; font-size: 14px;" v-show="false">Разработчик - @aksenovegor_web</p>
 
     </div>
   </footer>

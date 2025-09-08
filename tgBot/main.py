@@ -1,7 +1,5 @@
 import telebot
 from telebot import types
-import database as dt
-import requests
 
 import config as cfg
 
@@ -12,25 +10,7 @@ user_data = {}
 @bot.message_handler(commands=["start"])
 def send_start_mes(message):
     print(f"User {message.from_user.id} called command: {message.text}")
-
-    if message.text != "/start":
-        print(message.text[7:])
-        text_after_start = message.text[7:].split("_")
-        print(text_after_start)
-        if text_after_start[0] == "id":
-            user_data[message.chat.id] = {}
-            print(user_data)
-
-            response = requests.get(f"http://backend:8000/get_user_for_tg/{text_after_start[1]}")
-            info = response.json()
-            print(info)
-
-            user_data[message.chat.id]["name"] = info["name"]
-            user_data[message.chat.id]["phone"] = info["phone"]
-            user_data[message.chat.id]["tour"] = info["tour"]
-
-            show_contact_button_fromStart(message=message)
-    elif message.text == "/start":
+    if message.text == "/start":
         user_data[message.chat.id] = {}
         bot.send_message(message.chat.id, "Привет! Давай запишемся на тур. Как вас зовут?")
         bot.register_next_step_handler(message, ask_phone_number)
@@ -64,42 +44,31 @@ def ask_tour_name(message):
 
 
 def show_contact_button(message):
-    user_data[message.chat.id]['tour'] = message.text
-    
-    markupEnd = types.ReplyKeyboardMarkup()
-    button = types.KeyboardButton("Связаться с менеджером") # Replace with actual manager username
-    markupEnd.add(button)
+    try:
+        user_data[message.chat.id]['tour'] = message.text
+        
+        markupEnd = types.ReplyKeyboardMarkup()
+        button = types.KeyboardButton("Связаться с менеджером") # Replace with actual manager username
+        markupEnd.add(button)
 
-    summary = (
-        f"Отлично, {user_data[message.chat.id]['name']}! \n"
-        f"Ваш номер телефона: {user_data[message.chat.id]['phone']}\n"
-        f"Интересующий тур: {user_data[message.chat.id]['tour']}\n\n"
-        f"Нажми кнопку ниже, чтобы связаться с нашим менеджером."
-    )
-    bot.send_message(message.chat.id, summary, reply_markup=markupEnd)
-
-
-#для кнопки старт
-def show_contact_button_fromStart(message):
-    
-    markupEnd = types.ReplyKeyboardMarkup()
-    button = types.KeyboardButton("Связаться с менеджером") # Replace with actual manager username
-    markupEnd.add(button)
-    summary = (
-        f"Отлично, {user_data[message.chat.id]['name']}! \n"
-        f"Ваш номер телефона: {user_data[message.chat.id]['phone']}\n"
-        f"Интересующий тур: {user_data[message.chat.id]['tour']}\n\n"
-        f"Нажми кнопку ниже, чтобы связаться с нашим менеджером."
-    )
-    bot.send_message(message.chat.id, summary, reply_markup=markupEnd)
+        summary = (
+            f"Отлично, {user_data[message.chat.id]['name']}! \n"
+            f"Ваш номер телефона: {user_data[message.chat.id]['phone']}\n"
+            f"Интересующий тур: {user_data[message.chat.id]['tour']}\n\n"
+            f"Нажми кнопку ниже, чтобы связаться с нашим менеджером."
+        )
+        bot.send_message(message.chat.id, summary, reply_markup=markupEnd)
+    except Exception as ex:
+        print(ex)
 
 
 @bot.message_handler(func=lambda message: message.text == "Связаться с менеджером")
 def send_manager_message(message):
-    print(user_data)
-    userinfo = user_data[message.chat.id]
-    dt.addNewUser(userinfo["name"], userinfo["phone"], userinfo["tour"])
-    bot.send_message(message.chat.id, "Спасибо за ваше обращение! Мы свяжемся с вами в ближайшее время.", reply_markup=types.ReplyKeyboardRemove())
-
+    try:
+        print(user_data)
+        userinfo = user_data[message.chat.id]
+        bot.send_message(message.chat.id, "Спасибо за ваше обращение! Мы свяжемся с вами в ближайшее время.", reply_markup=types.ReplyKeyboardRemove())
+    except Exception as ex:
+        print(ex)
 
 bot.polling(none_stop=True)
