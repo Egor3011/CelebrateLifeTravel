@@ -6,7 +6,6 @@ from documents import documents
 
 from fastapi.responses import FileResponse
 
-import database
 from pydantic import BaseModel
 
 app = fastapi.FastAPI()
@@ -49,7 +48,7 @@ def get_user():
 @app.get("/reviews/{tour}")
 def get_all_reviews(tour: str):
     try:
-        with open(f"reviews.json", "r", encoding='utf-8') as f:
+        with open("reviews.json", "r", encoding='utf-8') as f:
             if tour == "all":
                 data = json.load(f)
                 return data

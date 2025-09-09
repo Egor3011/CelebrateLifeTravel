@@ -17,7 +17,6 @@
 
 <script setup>
 
-
 const openUrl = () => {
   window.open("https://wa.me/79647272870", '_blank')
 }
