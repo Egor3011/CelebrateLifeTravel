@@ -27,7 +27,7 @@ async def get_dogovor_pdf():
 
 @documents.get("/politika_konf")
 async def get_politika_pdf():
-    file_path = "./documents/politika_konf.pdf"
+    file_path = "./documents/politika_konf(1).pdf"
     if not os.path.exists(file_path):
         raise fastapi.HTTPException(status_code=404, detail="Politika_konf PDF not found")
     return FileResponse(file_path, media_type="application/pdf")
