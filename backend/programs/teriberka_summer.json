@@ -104,11 +104,11 @@
             },
             {
                 "range": "12-14",
-                "unavailable": false
+                "unavailable": true
             },
             {
                 "range": "19-21",
-                "unavailable": false
+                "unavailable": true
             },
             {
                 "range": "26-28",

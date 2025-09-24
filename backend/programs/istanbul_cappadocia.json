@@ -62,15 +62,15 @@
         "Сентябрь": [
             {
                 "range": "8-14",
-                "unavailable": false
+                "unavailable": true
             },
             {
                 "range": "15-21",
-                "unavailable": false
+                "unavailable": true
             },
             {
                 "range": "22-28",
-                "unavailable": false
+                "unavailable": true
             },
             {
                 "range": "29.09-5.10",

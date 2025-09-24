@@ -10,7 +10,6 @@ import formMore from '@/components/blocks/formMore.vue';
 import QuestionBlock from '@/components/blocks/QuestionBlock.vue';
 import ValuesBlock from '@/components/blocks/ValuesBlock.vue';
 import HeroTourBlock from '@/components/blocks/HeroTourBlock.vue';
-import TeamCard from '@/components/blocks/TeamCard.vue';
 import preimushestva from '@/components/blocks/preimushestva.vue';
 
 import { onMounted, watch } from 'vue';
