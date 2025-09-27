@@ -111,7 +111,70 @@
                 "range": "26-30",
                 "unavailable": false
             }
+        ],
+        "Январь 2026": [
+            { "range": "2-6", "unavailable": false },
+            { "range": "4-8", "unavailable": false }
+        ],
+        "Февраль 2026": [
+            { "range": "21-25", "unavailable": false }
+        ],
+        "Март 2026": [
+            { "range": "4-8", "unavailable": false },
+            { "range": "24-28", "unavailable": false }
+        ],
+        "Апрель 2026": [
+            { "range": "31.03-4.04", "unavailable": false },
+            { "range": "7-11", "unavailable": false },
+            { "range": "14-18", "unavailable": false },
+            { "range": "21-25", "unavailable": false },
+            { "range": "28-2.05", "unavailable": false }
+        ],
+        "Май 2026": [
+            { "range": "1-5", "unavailable": false },
+            { "range": "3-7", "unavailable": false },
+            { "range": "6-10", "unavailable": false },
+            { "range": "7-11", "unavailable": false },
+            { "range": "12-16", "unavailable": false },
+            { "range": "19-23", "unavailable": false },
+            { "range": "26-30", "unavailable": false }
+        ],
+        "Июнь 2026": [
+            { "range": "2-6", "unavailable": false },
+            { "range": "9-13", "unavailable": false },
+            { "range": "16-20", "unavailable": false },
+            { "range": "23-27", "unavailable": false },
+            { "range": "30-4.07", "unavailable": false }
+        ],
+        "Июль 2026": [
+            { "range": "7-11", "unavailable": false },
+            { "range": "14-18", "unavailable": false },
+            { "range": "21-25", "unavailable": false },
+            { "range": "28-1.09", "unavailable": false }
+        ],
+        "Август 2026": [
+            { "range": "4-8", "unavailable": false },
+            { "range": "11-15", "unavailable": false },
+            { "range": "18-22", "unavailable": false },
+            { "range": "25-29", "unavailable": false }
+        ],
+        "Сентябрь 2026": [
+            { "range": "1-5", "unavailable": false },
+            { "range": "8-12", "unavailable": false },
+            { "range": "15-19", "unavailable": false },
+            { "range": "22-26", "unavailable": false },
+            { "range": "29-3.10", "unavailable": false }
+        ],
+        "Октябрь 2026": [
+            { "range": "6-10", "unavailable": false },
+            { "range": "13-17", "unavailable": false },
+            { "range": "20-24", "unavailable": false },
+            { "range": "27-31", "unavailable": false }
+        ],
+        "Ноябрь 2026": [
+            { "range": "31.10-4.11", "unavailable": false }
         ]
+
     },
     "reviews": [
         "https://clt.s3.cloud.ru/reviews/1",
@@ -141,5 +204,5 @@
         "Авиабилеты",
         "Личные расходы"
     ],
-    "price": "49.900"
+    "price": "55.000"
 }
