@@ -109,6 +109,43 @@
                 "range": "26-28",
                 "unavailable": false
             }
+        ],
+        "Январь 2026": [
+            { "range": "2-4", "unavailable": false },
+            { "range": "5-7", "unavailable": false },
+            { "range": "9-11", "unavailable": false },
+            { "range": "16-18", "unavailable": false },
+            { "range": "23-25", "unavailable": false },
+            { "range": "30-1.02", "unavailable": false }
+        ],
+        "Февраль 2026": [
+            { "range": "6-8", "unavailable": false },
+            { "range": "13-15", "unavailable": false },
+            { "range": "20-22", "unavailable": false },
+            { "range": "27-1.03", "unavailable": false }
+        ],
+        "Март 2026": [
+            { "range": "6-8", "unavailable": false },
+            { "range": "13-15", "unavailable": false },
+            { "range": "20-22", "unavailable": false },
+            { "range": "27-29", "unavailable": false }
+        ],
+        "Апрель 2026": [
+            { "range": "3-5", "unavailable": false },
+            { "range": "10-12", "unavailable": false },
+            { "range": "17-19", "unavailable": false },
+            { "range": "24-26", "unavailable": false }
+        ],
+        "Май 2026": [
+            { "range": "1-3", "unavailable": false },
+            { "range": "8-10", "unavailable": false },
+            { "range": "15-17", "unavailable": false },
+            { "range": "22-24", "unavailable": false },
+            { "range": "29-31", "unavailable": false }
+        ],
+        "Июнь 2026": [
+            { "range": "5-7", "unavailable": false },
+            { "range": "12-14", "unavailable": false }
         ]
     },
     "goodInfo": [
