@@ -14,7 +14,7 @@
       :programItems="tourInfo.programData" 
       :price="tourInfo.price" 
     />
-    <div class="tour-program-block container"></div>
+    <div class="tour-program-block container">
       <div class="price-block">
         <span class="price-text" style="font-family: 'Unbounded-Bold';" v-if="tourInfo.value.tour_id == '6'">Цена тура в 2026 году 55.000 рублей</span>
       </div>
