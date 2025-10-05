@@ -70,13 +70,13 @@
             },
             {
                 "range": "28-1.10",
-                "unavailable": false
+                "unavailable": true
             }
         ],
         "Октябрь": [
             {
                 "range": "7-11",
-                "unavailable": false
+                "unavailable": true
             },
             {
                 "range": "9-13",

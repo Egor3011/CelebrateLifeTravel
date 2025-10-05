@@ -57,11 +57,11 @@
         "Октябрь 2025": [
             {
                 "range": "4-8",
-                "unavailable": false
+                "unavailable": true
             },
             {
                 "range": "14-18",
-                "unavailable": false
+                "unavailable": true
             },
             {
                 "range": "21-25",

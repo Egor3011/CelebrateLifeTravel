@@ -64,13 +64,13 @@
             },
             {
                 "range": "29.09-2.10",
-                "unavailable": false
+                "unavailable": true
             }
         ],
         "Октябрь": [
             {
                 "range": "6-9",
-                "unavailable": false
+                "unavailable": true
             },
             {
                 "range": "13-16",

@@ -61,7 +61,7 @@
         "Октябрь": [
             {
                 "range": "6-11",
-                "unavailable": false
+                "unavailable": true
             },
             {
                 "range": "17-22",
