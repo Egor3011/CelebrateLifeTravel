@@ -91,15 +91,15 @@
         ],
         "Апрель 2026": [
         {
-        "range": "13-19",
+        "range": "13-16",
         "unavailable": false
         },
         {
-        "range": "20-26",
+        "range": "20-23",
         "unavailable": false
         },
         {
-        "range": "27.04-3.05",
+        "range": "27-30",
         "unavailable": false
         }
         ],
@@ -109,65 +109,65 @@
                 "unavailable": false
             },
             {
-                "range": "4-10",
+                "range": "4-7",
                 "unavailable": false
             },
             {
-                "range": "18-24",
+                "range": "18-21",
                 "unavailable": false
             }
         ],
         "Июнь 2026": [
         {
-        "range": "1-7",
+        "range": "1-4",
         "unavailable": false
         },
         {
-        "range": "15-21",
+        "range": "15-18",
         "unavailable": false
         },
         {
-        "range": "29.06-5.07",
+        "range": "29.06-2.07",
         "unavailable": false
         }
         ],
         "Июль 2026": [
         {
-        "range": "13-19",
+        "range": "13-16",
         "unavailable": false
         },
         {
-        "range": "27.07-2.08",
+        "range": "27-30",
         "unavailable": false
         }
         ],
         "Август 2026": [
         {
-        "range": "10-16",
+        "range": "10-13",
         "unavailable": false
         },
         {
-        "range": "24-30",
+        "range": "24-27",
         "unavailable": false
         }
         ],
         "Сентябрь 2026": [
         {
-        "range": "7-13",
+        "range": "7-10",
         "unavailable": false
         },
         {
-        "range": "21-27",
+        "range": "21-24",
         "unavailable": false
         }
         ],
         "Октябрь 2026": [
             {
-            "range": "5-11",
+            "range": "5-8",
             "unavailable": false
             },
             {
-            "range": "19-25",
+            "range": "19-22",
             "unavailable": false
             }
         ],
