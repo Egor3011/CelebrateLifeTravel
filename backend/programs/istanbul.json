@@ -65,11 +65,7 @@
         ],
         "Ноябрь 2025": [
             {
-                "range": "3-6",
-                "unavailable": false
-            },
-            {
-                "range": "10-13",
+                "range": "1-4",
                 "unavailable": false
             }
         ],
@@ -168,12 +164,6 @@
             },
             {
             "range": "19-22",
-            "unavailable": false
-            }
-        ],
-        "Ноябрь 2026": [
-            {
-            "range": "1-4",
             "unavailable": false
             }
         ]
