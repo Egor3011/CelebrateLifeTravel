@@ -28,7 +28,7 @@ export default {
   },
   methods: {
     scrolToForm() {
-      window.open("https://t.me/celebratelifetravel_bot?start", '_blank')
+      window.open("https://wa.me/79647272870", '_blank')
     }
   }
 };
