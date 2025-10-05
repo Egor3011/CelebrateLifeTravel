@@ -65,7 +65,7 @@
         }
     ],
     "tourDatesData": {
-        "Сентябрь": [
+        "Сентябрь 2025": [
             {
                 "range": "2-8",
                 "unavailable": true
@@ -83,7 +83,7 @@
                 "unavailable": true
             }
         ],
-        "Октябрь": [
+        "Октябрь 2025": [
             {
                 "range": "13-19",
                 "unavailable": false
@@ -97,7 +97,7 @@
                 "unavailable": false
             }
         ],
-        "Ноябрь": [
+        "Ноябрь 2025": [
             {
                 "range": "3-9",
                 "unavailable": false
@@ -106,7 +106,68 @@
                 "range": "10-16",
                 "unavailable": false
             }
+        ],
+        "Май 2026": [
+            {
+                "range": "25-31",
+                "unavailable": false
+            }
+        ],
+        "Июнь 2026": [
+            {
+                "range": "1-7",
+                "unavailable": false
+            },
+            {
+                "range": "8-14",
+                "unavailable": false
+            },
+            {
+                "range": "22-28",
+                "unavailable": false
+            }
+        ],
+        "Июль 2026": [
+            {
+                "range": "6-12",
+                "unavailable": false
+            },
+            {
+                "range": "20-26",
+                "unavailable": false
+            }
+        ],
+        "Август 2026": [
+            {
+                "range": "3-9",
+                "unavailable": false
+            },
+            {
+                "range": "17-23",
+                "unavailable": false
+            }
+        ],
+        "Сентябрь 2026": [
+            {
+                "range": "7-13",
+                "unavailable": false
+            },
+            {
+                "range": "21-27",
+                "unavailable": false
+            }
+        ],
+        "Октябрь 2026": [
+            {
+                "range": "5-11",
+                "unavailable": false
+            },
+            {
+                "range": "19-25",
+                "unavailable": false
+            }
         ]
+
     },
     "goodInfo": [
         "Проживание в отеле Анталии, двухместное размещение (1 ночь)",
