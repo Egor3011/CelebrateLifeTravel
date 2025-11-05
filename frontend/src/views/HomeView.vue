@@ -69,11 +69,11 @@ import LineRoad from '@/components/blocks/LineRoad.vue';
   <main>
     <HeroTourBlock id="heroBlock_Home"/>
 
+    <tourBlock id="katalog"/>
+
     <preimushestva id="about"/>
 
     <AboutUs/>
-
-    <tourBlock id="katalog"/>
 
     <ValuesBlock :cards="valuesCards" id="plus"/>
 
