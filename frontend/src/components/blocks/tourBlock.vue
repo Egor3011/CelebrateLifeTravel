@@ -40,7 +40,7 @@ onMounted(() => {
 </script>
 
 <template>
-    <div class="container">
+    <div class="container" style="margin-top: 40px;">
         <div class="titleBlockDiv__tourBlock">
             <span class="headH1">Каталог туров</span>
             <h2 class="titleBlock titleBlockDiv__tourBlock__h1">Наши направления</h2>
