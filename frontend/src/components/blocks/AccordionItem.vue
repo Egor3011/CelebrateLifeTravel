@@ -95,7 +95,7 @@ export default {
 }
 
 .accordion-content.is-open {
-  max-height: 500px; /* Adjust this value based on your content's maximum height */
+  max-height: 1000px; /* Adjust this value based on your content's maximum height */
   padding: 16px 24px;
 }
 </style>
