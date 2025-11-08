@@ -67,10 +67,6 @@
             }
         ]
     },
-    "reviews": [
-        "https://clt.s3.cloud.ru/reviews/georgia1",
-        "https://clt.s3.cloud.ru/reviews/georgia2"
-    ],
     "goodInfo": [
         "Проживание в отелях по маршруту (Тбилиси, Боржоми/Ликани)",
         "Завтраки и обеды по программе",
