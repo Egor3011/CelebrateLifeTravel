@@ -59,20 +59,6 @@
             {
                 "range": "6-10",
                 "unavailable": true
-            },
-            {
-                "range": "15-19",
-                "unavailable": false
-            },
-            {
-                "range": "22-26",
-                "unavailable": false
-            }
-        ],
-        "Ноябрь": [
-            {
-                "range": "8-12",
-                "unavailable": false
             }
         ]
     },

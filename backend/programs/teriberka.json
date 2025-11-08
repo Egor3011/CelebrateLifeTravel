@@ -48,68 +48,6 @@
         }
     ],
     "tourDatesData": {
-        "Октябрь 2025": [
-            {
-                "range": "3-5",
-                "unavailable": true
-            },
-            {
-                "range": "10-12",
-                "unavailable": true
-            },
-            {
-                "range": "17-19",
-                "unavailable": false
-            },
-            {
-                "range": "24-26",
-                "unavailable": false
-            },
-            {
-                "range": "31-2.11",
-                "unavailable": false
-            }
-        ],
-        "Ноябрь 2025": [
-            {
-                "range": "2-4",
-                "unavailable": false
-            },
-            {
-                "range": "7-9",
-                "unavailable": false
-            },
-            {
-                "range": "14-16",
-                "unavailable": false
-            },
-            {
-                "range": "21-23",
-                "unavailable": false
-            },
-            {
-                "range": "28-30",
-                "unavailable": false
-            }
-        ],
-        "Декабрь 2025": [
-            {
-                "range": "5-7",
-                "unavailable": false
-            },
-            {
-                "range": "12-14",
-                "unavailable": false
-            },
-            {
-                "range": "19-21",
-                "unavailable": false
-            },
-            {
-                "range": "26-28",
-                "unavailable": false
-            }
-        ],
         "Январь 2026": [
             { "range": "2-4", "unavailable": false },
             { "range": "5-7", "unavailable": false },
