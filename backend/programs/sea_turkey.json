@@ -1,9 +1,9 @@
 {
-    "tour_id": "9",
+    "tour_id": "7",
     "tour_name": "MARINE_TURKEY",
     "title": "Морская Турция 2026",
     "description": "7 дней авторского тура по живописному побережью Турции: Каш, Олюдениз, Калкан, параплан, яхта, пляжи с лазурной водой",
-    "backgroundImage": "https://placeholder.com/marine_turkey/1",
+    "backgroundImage": "https://clt.s3.cloud.ru/photos/sea_turkey/main1",
     "tourContent": [
         "Проживание на вилле с бассейном",
         "Полноценная программа экскурсий",
@@ -16,13 +16,22 @@
         "Заброшенный аквапарк с видом на море"
     ],
     "photosInTour": [
-        "https://placeholder.com/marine_turkey/1",
-        "https://placeholder.com/marine_turkey/2",
-        "https://placeholder.com/marine_turkey/3",
-        "https://placeholder.com/marine_turkey/4",
-        "https://placeholder.com/marine_turkey/5"
+        "https://clt.s3.cloud.ru/photos/sea_turkey/1",
+        "https://clt.s3.cloud.ru/photos/sea_turkey/2",
+        "https://clt.s3.cloud.ru/photos/sea_turkey/3",
+        "https://clt.s3.cloud.ru/photos/sea_turkey/4",
+        "https://clt.s3.cloud.ru/photos/sea_turkey/5",
+        "https://clt.s3.cloud.ru/photos/sea_turkey/6",
+        "https://clt.s3.cloud.ru/photos/sea_turkey/7",
+        "https://clt.s3.cloud.ru/photos/sea_turkey/8",
+        "https://clt.s3.cloud.ru/photos/sea_turkey/9",
+        "https://clt.s3.cloud.ru/photos/sea_turkey/10",
+        "https://clt.s3.cloud.ru/photos/sea_turkey/11",
+        "https://clt.s3.cloud.ru/photos/sea_turkey/12",
+        "https://clt.s3.cloud.ru/photos/sea_turkey/13"
+
     ],
-    "backgroundImage_tourContent": "https://placeholder.com/marine_turkey/2",
+    "backgroundImage_tourContent": "https://clt.s3.cloud.ru/photos/sea_turkey/main2",
     "programData": [
         {
             "question": "День 1: Прилёт в Анталию",
@@ -52,7 +61,7 @@
             "question": "День 7: Завершение тура",
             "answer": "Завтрак, освобождение номеров, трансфер в аэропорт Анталии"
         }
-        
+
     ],
     "tourDatesData": {
         "Май 2026": [
