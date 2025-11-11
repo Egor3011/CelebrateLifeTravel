@@ -1,6 +1,6 @@
 <template>
   <div class="tour-dates-block">
-    <h2 class="block-title">Даты туров</h2>
+    <h2 class="block-title">Даты туров 2026</h2>
     <div class="dates-grid">
       <div class="date-column" v-for="(monthData, monthName) in tourDates" :key="monthName">
         <h3 class="month-name" style="margin-top: 0;">{{ monthName }}</h3>

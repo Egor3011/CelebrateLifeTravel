@@ -49,13 +49,13 @@
         }
     ],
     "tourDatesData": {
-        "Январь 2026": [
+        "Январь": [
             {
                 "range": "3-6",
                 "unavailable": false
             }
         ],
-        "Март 2026": [
+        "Март": [
             {
                 "range": "7-10",
                 "unavailable": false
@@ -65,7 +65,7 @@
                 "unavailable": false
             }
         ],
-        "Апрель 2026": [
+        "Апрель": [
         {
         "range": "13-16",
         "unavailable": false
@@ -79,7 +79,7 @@
         "unavailable": false
         }
         ],
-        "Май 2026": [
+        "Май": [
             {
                 "range": "1-4",
                 "unavailable": false
@@ -93,7 +93,7 @@
                 "unavailable": false
             }
         ],
-        "Июнь 2026": [
+        "Июнь": [
         {
         "range": "1-4",
         "unavailable": false
@@ -107,7 +107,7 @@
         "unavailable": false
         }
         ],
-        "Июль 2026": [
+        "Июль": [
         {
         "range": "13-16",
         "unavailable": false
@@ -117,7 +117,7 @@
         "unavailable": false
         }
         ],
-        "Август 2026": [
+        "Август": [
         {
         "range": "10-13",
         "unavailable": false
@@ -127,7 +127,7 @@
         "unavailable": false
         }
         ],
-        "Сентябрь 2026": [
+        "Сентябрь": [
         {
         "range": "7-10",
         "unavailable": false
@@ -137,7 +137,7 @@
         "unavailable": false
         }
         ],
-        "Октябрь 2026": [
+        "Октябрь": [
             {
             "range": "5-8",
             "unavailable": false

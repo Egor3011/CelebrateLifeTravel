@@ -1,7 +1,7 @@
 {
     "tour_id": "7",
     "tour_name": "MARINE_TURKEY",
-    "title": "Морская Турция 2026",
+    "title": "Морская Турция",
     "description": "7 дней авторского тура по живописному побережью Турции: Каш, Олюдениз, Калкан, параплан, яхта, пляжи с лазурной водой",
     "backgroundImage": "https://clt.s3.cloud.ru/photos/sea_turkey/main1",
     "tourContent": [
@@ -64,13 +64,13 @@
 
     ],
     "tourDatesData": {
-        "Май 2026": [
+        "Май": [
             {
                 "range": "25-31",
                 "unavailable": false
             }
         ],
-        "Июнь 2026": [
+        "Июнь": [
             {
                 "range": "1-7",
                 "unavailable": false
@@ -84,7 +84,7 @@
                 "unavailable": false
             }
         ],
-        "Июль 2026": [
+        "Июль": [
             {
                 "range": "6-12",
                 "unavailable": false
@@ -94,7 +94,7 @@
                 "unavailable": false
             }
         ],
-        "Август 2026": [
+        "Август": [
             {
                 "range": "3-9",
                 "unavailable": false
@@ -104,7 +104,7 @@
                 "unavailable": false
             }
         ],
-        "Сентябрь 2026": [
+        "Сентябрь": [
             {
                 "range": "7-13",
                 "unavailable": false
@@ -114,7 +114,7 @@
                 "unavailable": false
             }
         ],
-        "Октябрь 2026": [
+        "Октябрь": [
             {
                 "range": "5-11",
                 "unavailable": false
