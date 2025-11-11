@@ -3,7 +3,7 @@
     "tour_name": "kamchatka",
     "title": "КАМЧАТКА. Вулканы, океан, рафтинг, рыбалка, восхождения",
     "description": "7 ДНЕЙ в объятьях манящей и чарующей Камчатки у берегов Тихого океана и в окружении величественных вулканов.",
-    "backgroundImage": "https://clt.s3.cloud.ru/photos/kamchatka/10",
+    "backgroundImage": "https://clt.s3.cloud.ru/photos/kamchatka/logo1",
     "tourContent": [
         "Пикник на тихом океане",
         "Горячие источники",
@@ -67,7 +67,7 @@
                 "unavailable": false
             }
         ]
-        
+
     },
     "goodInfo": [
         "Комфортабельное проживание, двухместное размещение",
