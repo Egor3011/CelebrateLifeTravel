@@ -69,6 +69,11 @@
         ]
 
     },
+    "reviews": [
+        "https://clt.s3.cloud.ru/reviews/21",
+        "https://clt.s3.cloud.ru/reviews/22",
+        "https://clt.s3.cloud.ru/reviews/23"
+    ],
     "goodInfo": [
         "Комфортабельное проживание, двухместное размещение",
         "Завтраки в отеле",
