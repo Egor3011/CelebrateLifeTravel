@@ -148,6 +148,12 @@
             "range": "19-22",
             "unavailable": false
             }
+        ],
+        "Ноябрь": [
+            {
+            "range": "1-4",
+            "unavailable": false
+            }
         ]
     },
     "reviews": [
