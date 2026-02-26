@@ -6,7 +6,7 @@
         <form>
           <button type="submit" class="submit-button" @click="openUrl">Напиши менеджеру в WhatsApp</button>
         </form>
-        <a href="https://wa.me/79647272870" class="link_blue" v-show="false">Напиши менеджеру в WhatsApp</a>
+        <a href="https://wa.me/79855886090" class="link_blue" v-show="false">Напиши менеджеру в WhatsApp</a>
       </div>
       <div class="image-section">
         <img src="https://clt.s3.cloud.ru/photos/perezaGruzia/8" alt="Landscape with person in national attire" />
@@ -27,7 +27,7 @@ const props = defineProps({
 
 
 const openUrl = () => {
-  window.open("https://wa.me/79647272870", '_blank')
+  window.open("https://wa.me/79855886090", '_blank')
 }
 </script>
 

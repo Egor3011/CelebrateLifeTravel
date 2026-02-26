@@ -70,7 +70,7 @@ const goToPunkt = (id, page) => {
 }
 
 const openUrlTG = () => {
-  window.open("https://wa.me/79647272870", '_blank')
+  window.open("https://wa.me/79855886090", '_blank')
 }
 
 const closeMenu = () => {
