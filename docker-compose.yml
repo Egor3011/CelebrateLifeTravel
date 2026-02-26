@@ -29,12 +29,3 @@ services:
       context: ./frontend
     networks:
       - dev
-
-
-  tgbot:
-    build:
-      context: ./tgbot
-    container_name: tele_bot
-    networks:
-      - dev
-    restart: unless-stopped
