@@ -9,12 +9,6 @@
         <h3>Мы в социальных сетях</h3>
         <ul>
           <li>
-            <a href="https://instagram.com/kate_cl_travel?igshid=YmMyMTA2M2Y=" class="links_sites">
-              <img src="/public/icons/instagram.png" alt="">
-              <h3 style="color: #0073FF;">Instagram</h3>
-            </a>
-          </li>
-          <li>
             <a href="https://t.me/celebrate_life_travel" class="links_sites">
               <img src="/public/icons/tg.png" alt="">
               <h3 style="color: #0073FF;">Telegram</h3>
