@@ -57,8 +57,8 @@
 
         <p>Электронная почта: TRAVEL.CELEBRATELIFE@YANDEX.RU</p>
 
-        <h3>Документы</h3>
-        <ul>
+        <h3 v-show="false">Документы</h3>
+        <ul v-show="false">
           <li><a href="/documents#ip_info" class="link_blue">Данные ИП</a></li>
           <li><a href="/documents#politika_konf" class="link_blue">Политика конфиденциальности</a></li>
           <li><a href="/documents#oferta" class="link_blue">Договор-оферта</a></li>
