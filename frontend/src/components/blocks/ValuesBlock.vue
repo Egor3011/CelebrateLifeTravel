@@ -187,8 +187,15 @@ h2 {
 
 @media (max-width: 1024px) {
   .cards-grid {
-    grid-template-columns: 1fr; /* Single column on smaller screens */
+    grid-template-columns: minmax(0, 1fr); /* Single column on smaller screens */
+    box-sizing: border-box;
     padding: 0 20px;
+  }
+
+  .value-card,
+  h2 {
+    min-width: 0;
+    overflow-wrap: anywhere;
   }
 
   h2 {

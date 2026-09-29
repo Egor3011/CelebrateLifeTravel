@@ -66,47 +66,17 @@
     "tourDatesData": {
         "Май": [
             {
-                "range": "25-31",
+                "range": "24-30",
+                "unavailable": false
+            },
+            {
+                "range": "31-6.06",
                 "unavailable": false
             }
         ],
         "Июнь": [
             {
-                "range": "1-7",
-                "unavailable": false
-            },
-            {
-                "range": "8-14",
-                "unavailable": false
-            },
-            {
-                "range": "22-28",
-                "unavailable": false
-            }
-        ],
-        "Июль": [
-            {
-                "range": "6-12",
-                "unavailable": false
-            },
-            {
-                "range": "20-26",
-                "unavailable": false
-            }
-        ],
-        "Август": [
-            {
-                "range": "3-9",
-                "unavailable": false
-            },
-            {
-                "range": "17-23",
-                "unavailable": false
-            }
-        ],
-        "Сентябрь": [
-            {
-                "range": "7-13",
+                "range": "14-20",
                 "unavailable": false
             },
             {
@@ -114,7 +84,7 @@
                 "unavailable": false
             }
         ],
-        "Октябрь": [
+        "Июль": [
             {
                 "range": "5-11",
                 "unavailable": false
@@ -123,8 +93,49 @@
                 "range": "19-25",
                 "unavailable": false
             }
+        ],
+        "Август": [
+            {
+                "range": "2-8",
+                "unavailable": false
+            },
+            {
+                "range": "9-15",
+                "unavailable": false
+            },
+            {
+                "range": "16-22",
+                "unavailable": false
+            },
+            {
+                "range": "23-29",
+                "unavailable": false
+            }
+        ],
+        "Сентябрь": [
+            {
+                "range": "6-12",
+                "unavailable": false
+            },
+            {
+                "range": "20-26",
+                "unavailable": false
+            },
+            {
+                "range": "27-3.10",
+                "unavailable": false
+            }
+        ],
+        "Октябрь": [
+            {
+                "range": "4-10",
+                "unavailable": false
+            },
+            {
+                "range": "11-17",
+                "unavailable": false
+            }
         ]
-
     },
     "goodInfo": [
         "Проживание в отеле 4* в Анталии (1 ночь)",

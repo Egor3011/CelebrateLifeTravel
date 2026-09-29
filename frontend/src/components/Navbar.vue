@@ -1,10 +1,13 @@
 <template>
   <nav class="navbar container">
     <div class="navbar-brand">
-      <form @click="topGo" class="brand-link">
-        <span class="brand-name">CELEBRATE LIFE</span>
-        <span class="brand-travel">TRAVEL</span>
-      </form>
+      <RouterLink to="/" @click="topGo" class="brand-link" aria-label="На главную — Празднуй жизнь и путешествуй">
+        <img src="/clt-emblem-ru.png" alt="" class="brand-emblem" />
+        <span class="brand-text">
+          <span class="brand-name">ПРАЗДНУЙ ЖИЗНЬ</span>
+          <span class="brand-travel">И ПУТЕШЕСТВУЙ</span>
+        </span>
+      </RouterLink>
     </div>
 
     <ul class="navbar-links">
@@ -17,14 +20,14 @@
 
     <div class="navbar-actions">
       <button class="request-button" @click="openUrlTG">Оставить заявку</button>
-      <button class="hamburger-button" @click="toggleMenu">
+      <button class="hamburger-button" @click="toggleMenu" :aria-expanded="isMenuOpen" :aria-label="isMenuOpen ? 'Закрыть меню' : 'Открыть меню'" aria-controls="mobile-menu">
         <div class="hamburger-icon"></div>
         <div class="hamburger-icon"></div>
         <div class="hamburger-icon"></div>
       </button>
     </div>
   </nav>
-  <div class="mobile-menu" :class="{ 'is-open': isMenuOpen }">
+  <div id="mobile-menu" class="mobile-menu" :class="{ 'is-open': isMenuOpen }" :inert="!isMenuOpen">
     <ul class="mobile-navbar-links">
       <li><RouterLink to="/" @click="closeMenu">Главная</RouterLink></li>
       <li><a href="https://celebratelifetravel.ru/#about" @click="closeMenu">О нас</a></li>
@@ -53,13 +56,9 @@ const toggleMenu = () => {
 };
 
 const topGo = () => {
-  const pathName = window.location.pathname
-  if (pathName == "/") {
-    const el = document.getElementById("heroBlock_Home");
-    el.scrollIntoView({behavior: "smooth"});
-  }
-  else {
-    window.open("https://celebratelifetravel.ru")
+  isMenuOpen.value = false;
+  if (window.location.pathname === "/") {
+    document.getElementById("heroBlock_Home")?.scrollIntoView({ behavior: "smooth" });
   }
 }
 
@@ -139,18 +138,35 @@ watch(isMenuOpen, (newValue) => {
 .brand-link {
   text-decoration: none;
   display: flex;
+  align-items: center;
+  gap: 10px;
+  line-height: 1.2;
+}
+
+.brand-emblem {
+  display: block;
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+  flex: none;
+}
+
+.brand-text {
+  display: flex;
   flex-direction: column;
-  line-height: 1;
+  gap: 3px;
+  white-space: nowrap;
 }
 
 .brand-name {
   font-family: 'Unbounded-Bold';
-  font-size: 1.2em;
+  font-size: 12px;
 }
 
 .brand-travel {
   font-family: 'Montserrat';
-  font-size: 0.8em;
+  font-size: 12px;
+  letter-spacing: 0.04em;
 }
 
 .brand-link:hover .brand-name,
@@ -276,7 +292,7 @@ watch(isMenuOpen, (newValue) => {
   background-color: #357ae8;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1280px) {
   .navbar-links {
     display: none;
   }
@@ -286,6 +302,22 @@ watch(isMenuOpen, (newValue) => {
 
   .request-button {
     display: none;
+  }
+
+  .mobile-request-button {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .brand-emblem {
+    width: 44px;
+    height: 44px;
+  }
+
+  .brand-name,
+  .brand-travel {
+    font-size: 10px;
   }
 }
 

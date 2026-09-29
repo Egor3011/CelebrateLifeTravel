@@ -55,6 +55,34 @@
     "tourDatesData": {
         "Май": [
             {
+                "range": "3-7",
+                "unavailable": false
+            },
+            {
+                "range": "24-28",
+                "unavailable": false
+            }
+        ],
+        "Июнь": [
+            {
+                "range": "14-18",
+                "unavailable": false
+            },
+            {
+                "range": "21-25",
+                "unavailable": false
+            }
+        ],
+        "Июль": [
+            {
+                "range": "5-9",
+                "unavailable": false
+            },
+            {
+                "range": "12-16",
+                "unavailable": false
+            },
+            {
                 "range": "19-23",
                 "unavailable": false
             },
@@ -63,7 +91,7 @@
                 "unavailable": false
             }
         ],
-        "Июнь": [
+        "Август": [
             {
                 "range": "2-6",
                 "unavailable": false
@@ -79,63 +107,23 @@
             {
                 "range": "23-27",
                 "unavailable": false
-            },
-            {
-                "range": "30-4.07",
-                "unavailable": false
-            }
-        ],
-        "Июль": [
-            {
-                "range": "7-11",
-                "unavailable": false
-            },
-            {
-                "range": "14-18",
-                "unavailable": false
-            },
-            {
-                "range": "21-25",
-                "unavailable": false
-            },
-            {
-                "range": "28-1.08",
-                "unavailable": false
-            }
-        ],
-        "Август": [
-            {
-                "range": "4-8",
-                "unavailable": false
-            },
-            {
-                "range": "11-15",
-                "unavailable": false
-            },
-            {
-                "range": "18-22",
-                "unavailable": false
-            },
-            {
-                "range": "25-29",
-                "unavailable": false
             }
         ],
         "Сентябрь": [
             {
-                "range": "1-5",
+                "range": "6-10",
                 "unavailable": false
             },
             {
-                "range": "8-12",
+                "range": "13-17",
                 "unavailable": false
             },
             {
-                "range": "15-19",
+                "range": "20-24",
                 "unavailable": false
             },
             {
-                "range": "22-26",
+                "range": "27-1.10",
                 "unavailable": false
             }
         ]

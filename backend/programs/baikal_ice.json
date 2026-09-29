@@ -57,19 +57,13 @@
     ],
     "tourDatesData": {
         "Февраль": [
-            { "range": "11-15", "unavailable": false },
-            { "range": "13-17", "unavailable": false },
+            { "range": "9-13", "unavailable": false },
             { "range": "16-20", "unavailable": false },
-            { "range": "18-22", "unavailable": false },
-            { "range": "21-25", "unavailable": false },
-            { "range": "23-27", "unavailable": false },
-            { "range": "26-2.03", "unavailable": false }
+            { "range": "22-26", "unavailable": false },
+            { "range": "27-3.03", "unavailable": false }
         ],
         "Март": [
-            { "range": "1-5", "unavailable": false },
-            { "range": "3-7", "unavailable": false },
             { "range": "6-10", "unavailable": false },
-            { "range": "8-12", "unavailable": false },
             { "range": "11-15", "unavailable": false }
         ]
     },

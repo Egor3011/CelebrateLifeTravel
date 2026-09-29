@@ -1,7 +1,7 @@
 <template>
   <div class="hero-tour-block">
     <div class="content">
-      <img src="/public/celebrate_life_travel.svg" alt="Celebrate Life Travel Logo" class="logo" />
+      <img src="/clt-logo-ru.png" alt="Празднуй жизнь и путешествуй" class="logo" />
       <h1>АВТОРСКИЕ ТУРЫ</h1>
       <p>Насыщенные и комфортные путешествия, с душой и вниманием к деталям</p>
       <button class="book-tour-button" @click="scrolToForm">Забронировать тур</button>
@@ -20,8 +20,8 @@ const scrolToForm = () => {
 /* Default styles (for mobile and smaller desktops) */
 .hero-tour-block {
   position: relative;
-  width: 100vw;
-  height: 100vh; /* Full viewport height */
+  width: 100%;
+  min-height: 100svh;
   background-image: url('https://clt.s3.cloud.ru/photos/ALL/katya_mainPage'); /* Background image from the provided image */
   background-size: cover;
   background-position: center; /* Makes the background move with scrolling */
@@ -32,16 +32,13 @@ const scrolToForm = () => {
   color: var(--vt-text2-color); /* White text */
   overflow: hidden; /* Ensure content doesn't spill */
   box-sizing: border-box;
+  padding: 110px 20px 48px;
 }
 
 .content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
   z-index: 10;
-  padding: 20px;
-  max-width: 90%; /* Max width for content */
+  width: min(100%, 500px);
 }
 
 .content h1 {
@@ -49,10 +46,11 @@ const scrolToForm = () => {
 }
 
 .logo {
-  max-width: 200px;
-  margin-bottom: 20px;
+  display: block;
+  width: min(130px, 35vw);
+  height: auto;
+  margin: 0 auto 20px;
   filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
-  border-bottom: 1px solid #ffffff;
 }
 
 h1 {
@@ -96,11 +94,6 @@ p {
   }
 
   .content {
-    position: relative; /* Override absolute for desktop */
-    top: auto;
-    left: auto;
-    transform: none;
-    max-width: 500px; /* Adjust max-width for desktop content */
     text-align: left; /* Align text to the left */
   }
 
@@ -133,18 +126,14 @@ p {
   }
 
   .logo {
-    max-width: 150px;
+    width: min(110px, 30vw);
   }
 }
 
 @media (max-width: 768px) {
   .hero-tour-block {
-    height: 100vh; /* Adjust height for smaller mobile screens */
     background-image: url('https://clt.s3.cloud.ru/photos/ALL/mainPage_phone');
-  }
-
-  .content {
-    top: 40%;
+    padding-top: 90px;
   }
 
   h1 {
