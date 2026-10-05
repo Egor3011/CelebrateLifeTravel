@@ -10,7 +10,7 @@
       />
     </div>
     <div class="price-block">
-      <span class="price-text" style="font-family: 'Unbounded-Bold';">Цена тура {{ price }} рублей</span>
+      <span class="price-text" style="font-family: 'Unbounded-Bold';">Цена тура {{ price }}</span>
     </div>
   </div>
 </template>
